@@ -1,0 +1,8 @@
+{
+  "address": "C 1995 O1 (Hale-Bopp)",
+  "angle": 90.0,
+  "position_LaunchPad": {
+    "horizontalPosition": 365.0,
+    "height": 25.0
+  }
+}
