@@ -1,0 +1,243 @@
+{
+  "version": "1.5",
+  "BASE_DATA": {
+    "radius": 167.5,
+    "radiusDifficultyScale": {
+      "Normal": 1.0,
+      "Hard": 5.0,
+      "Realistic": 20.0
+    },
+    "gravity": 0.00005937,
+    "gravityDifficultyScale": {},
+    "timewarpHeight": 1000.0,
+    "velocityArrowsHeight": -1000.0,
+    "mapColor": {
+      "r": 0.384,
+      "g": 0.384,
+      "b": 0.384,
+      "a": 1.0
+    },
+    "significant": true,
+    "rotateCamera": true
+  },
+  "TERRAIN_DATA": {
+    "TERRAIN_TEXTURE_DATA": {
+      "planetTexture": "ACSSChuryumov-Gerasimenko",
+      "planetTextureCutout": 0.935,
+      "surfaceTexture_A": "Soft_Rocks",
+      "surfaceTextureSize_A": {
+        "x": 24.0,
+        "y": 24.0
+      },
+      "surfaceTexture_B": "Hard_Rocks",
+      "surfaceTextureSize_B": {
+        "x": 24.0,
+        "y": 24.0
+      },
+      "terrainTexture_C": "Circles",
+      "terrainTextureSize_C": {
+        "x": 200.0,
+        "y": 150.0
+      },
+      "surfaceLayerSize": 35.0,
+      "minFade": 0.15,
+      "maxFade": 0.65,
+      "shadowIntensity": 8.0,
+      "shadowHeight": 4.0
+    },
+    "terrainFormulaDifficulties": {
+      "Normal": [
+        "OUTPUT = AddHeightMap(ACSSChuryumov-Gerasimenko.txt, 1052.4335389525807348849855333986, 0.05)"
+      ],
+      "Hard": [
+        "OUTPUT = AddHeightMap(ACSSChuryumov-Gerasimenko.txt, 5262.1676947629036744249276669932, 0.25)"
+      ],
+      "Realistic": [
+        "OUTPUT = AddHeightMap(ACSSChuryumov-Gerasimenko.txt, 21048.670779051614697699710667973, 1)"
+      ]
+    },
+    "textureFormula": [
+      "OUTPUT = AddHeightMap( Perlin, 6283.18530718, 1)"
+    ],
+    "verticeSize": 0.5,
+    "collider": true,
+    "flatZones": [],
+    "rocks": {
+      "rockType": "Rock Round",
+      "rockDensity": 1.1,
+      "minSize": 0.15,
+      "maxSize": 0.7,
+      "powerCurve": 2.2,
+      "maxAngle": 40.0
+    }
+  },
+  "POST_PROCESSING": {
+    "keys": [
+      {
+        "height": 3000.0,
+        "shadowIntensity": 1.75,
+        "starIntensity": 0.0,
+        "hueShift": 0.0,
+        "saturation": 0.95,
+        "contrast": 1.2,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+      },
+      {
+        "height": 5000.0,
+        "shadowIntensity": 1.75,
+        "starIntensity": 1.0,
+        "hueShift": 0.0,
+        "saturation": 0.95,
+        "contrast": 1.2,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+      }
+    ]
+  },
+  "ORBIT_DATA": {
+    "parent": "Sun",
+    "semiMajorAxis": 32337061250.98925,
+    "smaDifficultyScale": {
+      "Normal": 1.0,
+      "Hard": 5.0,
+      "Realistic": 20.0
+    },
+    "eccentricity": 0.363992288400217,
+    "argumentOfPeriapsis": 226.6321761,
+    "direction": 1,
+    "multiplierSOI": 1.0,
+    "soiDifficultyScale": {}
+  },
+  "ACHIEVEMENT_DATA": {
+    "Landed": true,
+    "Takeoff": true,
+    "Atmosphere": true,
+    "Orbit": true,
+    "Crash": true
+  },
+  "LANDMARKS": [
+    {
+      "name": "Imhotep",
+      "angle": 116.7,
+      "startAngle": 78.5,
+      "endAngle": 154.9
+    },
+    {
+      "name": "Apis",
+      "angle": 72.7,
+      "startAngle": 66.9,
+      "endAngle": 78.5
+    },
+    {
+      "name": "Atum",
+      "angle": 56.05,
+      "startAngle": 45.2,
+      "endAngle": 66.9
+    },
+    {
+      "name": "Anubis",
+      "angle": 40.1,
+      "startAngle": 35,
+      "endAngle": 45.2
+    },
+    {
+      "name": "Seth",
+      "angle": 30.1,
+      "startAngle": 25.2,
+      "endAngle": 35
+    },
+    {
+      "name": "Hapi A",
+      "angle": 13,
+      "startAngle": 0.8,
+      "endAngle": 25.2
+    },
+    {
+      "name": "Anuket",
+      "angle": 343.35,
+      "startAngle": 325.9,
+      "endAngle": 360.8
+    },
+    {
+      "name": "Serqet",
+      "angle": 320.7,
+      "startAngle": 315.5,
+      "endAngle": 325.9
+    },
+    {
+      "name": "Nut",
+      "angle": 311.15,
+      "startAngle": 306.8,
+      "endAngle": 315.5
+    },
+    {
+      "name": "Ma'at",
+      "angle": 304.4,
+      "startAngle": 302,
+      "endAngle": 306.8
+    },
+    {
+      "name": "Maftet",
+      "angle": 295.85,
+      "startAngle": 289.7,
+      "endAngle": 302
+    },
+    {
+      "name": "Hatmehit",
+      "angle": 278.3,
+      "startAngle": 266.9,
+      "endAngle": 289.7
+    },
+    {
+      "name": "Bastet",
+      "angle": 255.6,
+      "startAngle": 244.3,
+      "endAngle": 266.9
+    },
+    {
+      "name": "Hathor",
+      "angle": 239.7,
+      "startAngle": 235.1,
+      "endAngle": 244.3
+    },
+    {
+      "name": "Hapi B",
+      "angle": 231.65,
+      "startAngle": 228.2,
+      "endAngle": 235.1
+    },
+    {
+      "name": "Aker",
+      "angle": 225.25,
+      "startAngle": 222.3,
+      "endAngle": 228.2
+    },
+    {
+      "name": "Khepry A",
+      "angle": 209.3,
+      "startAngle": 196.3,
+      "endAngle": 222.3
+    },
+    {
+      "name": "Babu",
+      "angle": 192.75,
+      "startAngle": 189.2,
+      "endAngle": 196.3
+    },
+    {
+      "name": "Aten",
+      "angle": 182.4,
+      "startAngle": 175.6,
+      "endAngle": 189.2
+    },
+    {
+      "name": "Khepry B",
+      "angle": 165.25,
+      "startAngle": 154.9,
+      "endAngle": 175.6
+    }
+  ]
+}

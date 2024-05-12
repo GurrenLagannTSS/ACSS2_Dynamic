@@ -1,0 +1,188 @@
+{
+  "version": "1.5",
+  "BASE_DATA": {
+    "radius": 91080.0,
+    "radiusDifficultyScale": {
+      "Normal": 1.0,
+      "Hard": 5.0,
+      "Realistic": 20.0
+    },
+    "gravity": 1.796502844,
+    "gravityDifficultyScale": {},
+    "timewarpHeight": 5000.0,
+    "velocityArrowsHeight": "NaN",
+    "mapColor": {
+      "r": 0.751,
+      "g": 0.734,
+      "b": 0.656,
+      "a": 1.0
+    },
+    "significant": true,
+    "rotateCamera": true
+  },
+  "ATMOSPHERE_PHYSICS_DATA": {
+    "height": 4554.025,
+    "density": 5.95765e-10,
+    "curve": 9.58,
+    "curveScale": {},
+    "parachuteMultiplier": 0.437791,
+    "upperAtmosphere": 0.01642760514,
+    "heightDifficultyScale": {},
+    "shockwaveIntensity": 0.5,
+    "minHeatingVelocityMultiplier": 1.0
+  },
+  "TERRAIN_DATA": {
+    "TERRAIN_TEXTURE_DATA": {
+      "planetTexture": "ACSSIo",
+      "planetTextureCutout": -1.0,
+      "surfaceTexture_A": "Dust",
+      "surfaceTextureSize_A": {
+        "x": 20.0,
+        "y": 8.0
+      },
+      "surfaceTexture_B": "None",
+      "surfaceTextureSize_B": {
+        "x": -1.0,
+        "y": -1.0
+      },
+      "terrainTexture_C": "Dust",
+      "terrainTextureSize_C": {
+        "x": 150.0,
+        "y": 50.0
+      },
+      "surfaceLayerSize": 30.0,
+      "minFade": 0.0,
+      "maxFade": 1.0,
+      "shadowIntensity": 8.0,
+      "shadowHeight": 15.0
+    },
+    "terrainFormulaDifficulties": {
+      "Normal": [
+        "OUTPUT = AddHeightMap(ACSSIo.txt, 572272.51777791673631835511869819, 0.05)"
+      ],
+      "Hard": [
+        "OUTPUT = AddHeightMap(ACSSIo.txt, 2861362.588889583681591775593491, 0.25)"
+      ],
+      "Realistic": [
+        "OUTPUT = AddHeightMap(ACSSIo.txt, 11445450.355558334726367102373964, 1)"
+      ]
+    },
+    "textureFormula": [],
+    "verticeSize": 2.5,
+    "collider": true,
+    "flatZones": []
+  },
+  "ORBIT_DATA": {
+    "parent": "Jupiter",
+    "semiMajorAxis": 21095696.36671255,
+    "smaDifficultyScale": {
+      "Normal": 1.0,
+      "Hard": 5.0,
+      "Realistic": 20.0
+    },
+    "eccentricity": 0.00359348001572827,
+    "argumentOfPeriapsis": 80.18563914,
+    "direction": 1,
+    "multiplierSOI": 1.0,
+    "soiDifficultyScale": {}
+  },
+  "ACHIEVEMENT_DATA": {
+    "Landed": true,
+    "Takeoff": true,
+    "Atmosphere": true,
+    "Orbit": true,
+    "Crash": true
+  },
+  "LANDMARKS": [
+    {
+      "name": "Ruwa Patera",
+      "angle": 88.5,
+      "startAngle": 87,
+      "endAngle": 90
+    },
+    {
+      "name": "Karei Patera",
+      "angle": 76.5,
+      "startAngle": 73,
+      "endAngle": 80
+    },
+    {
+      "name": "Tawhaki Vallis",
+      "angle": 16,
+      "startAngle": 11,
+      "endAngle": 21
+    },
+    {
+      "name": "Hi'iaka Montes",
+      "angle": 9,
+      "startAngle": 7,
+      "endAngle": 11
+    },
+    {
+      "name": "Prometheus",
+      "angle": 291,
+      "startAngle": 288,
+      "endAngle": 294
+    },
+    {
+      "name": "Tsui Goab Tholus",
+      "angle": 287.375,
+      "startAngle": 286.75,
+      "endAngle": 288
+    },
+    {
+      "name": "Tsui Goab Flucus",
+      "angle": 286,
+      "startAngle": 285,
+      "endAngle": 286.75
+    },
+    {
+      "name": "Michabo Patera",
+      "angle": 282,
+      "startAngle": 281,
+      "endAngle": 283
+    },
+    {
+      "name": "Pele",
+      "angle": 195,
+      "startAngle": 190,
+      "endAngle": 200
+    },
+    {
+      "name": "Boösaule Montes",
+      "angle": 185,
+      "startAngle": 180,
+      "endAngle": 190
+    },
+    {
+      "name": "Reshet Patera",
+      "angle": 145,
+      "startAngle": 142,
+      "endAngle": 147
+    },
+    {
+      "name": "Nyambe Patera",
+      "angle": 107,
+      "startAngle": 102,
+      "endAngle": 112
+    },
+    {
+      "name": "Colchis Regio",
+      "angle": 240,
+      "startAngle": 200,
+      "endAngle": 280
+    },
+    {
+      "name": "Bosphorus Regio",
+      "angle": 325,
+      "startAngle": 290,
+      "endAngle": 0
+    },
+    {
+      "name": "Media Regio",
+      "angle": 27.5,
+      "startAngle": 0,
+      "endAngle": 55
+    }
+  ]
+}

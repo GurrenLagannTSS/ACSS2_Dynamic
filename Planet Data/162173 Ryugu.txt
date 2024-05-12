@@ -1,0 +1,153 @@
+{
+  "version": "1.5",
+  "BASE_DATA": {
+    "radius": 22.4,
+    "radiusDifficultyScale": {
+      "Normal": 1.0,
+      "Hard": 5.0,
+      "Realistic": 20.0
+    },
+    "gravity": 0.0001496,
+    "gravityDifficultyScale": {},
+    "timewarpHeight": 1000.0,
+    "velocityArrowsHeight": -1000.0,
+    "mapColor": {
+      "r": 0.373,
+      "g": 0.365,
+      "b": 0.353,
+      "a": 1.0
+    },
+    "significant": true,
+    "rotateCamera": true
+  },
+  "TERRAIN_DATA": {
+    "TERRAIN_TEXTURE_DATA": {
+      "planetTexture": "ACSSRyugu",
+      "planetTextureCutout": 0.925,
+      "surfaceTexture_A": "Limestone",
+      "surfaceTextureSize_A": {
+        "x": 20.0,
+        "y": 12.0
+      },
+      "surfaceTexture_B": "Hard_Rocks",
+      "surfaceTextureSize_B": {
+        "x": 22.0,
+        "y": 17.0
+      },
+      "terrainTexture_C": "Limestone",
+      "terrainTextureSize_C": {
+        "x": 320.0,
+        "y": 200.0
+      },
+      "surfaceLayerSize": 35.0,
+      "minFade": 0.0,
+      "maxFade": 0.5,
+      "shadowIntensity": 10.0,
+      "shadowHeight": 3.0
+    },
+    "terrainFormulaDifficulties": {
+      "Normal": [
+        "OUTPUT = AddHeightMap(ACSSRyugu.txt, 140.7433508808227370831264235709, 0.05)"
+      ],
+      "Hard": [
+        "OUTPUT = AddHeightMap(ACSSRyugu.txt, 703.7167544041136854156321178546, 0.25)"
+      ],
+      "Realistic": [
+        "OUTPUT = AddHeightMap(ACSSRyugu.txt, 2814.867017616454741662528471418, 1)"
+      ]
+    },
+    "textureFormula": [
+      "OUTPUT = AddHeightMap( Perlin, 13613.5681655558, 1, Curve7)"
+    ],
+    "verticeSize": 1.0,
+    "collider": true,
+    "flatZones": [],
+    "rocks": {
+      "rockType": "Rock Round",
+      "rockDensity": 0.9,
+      "minSize": 0.12,
+      "maxSize": 0.32,
+      "powerCurve": 2.5,
+      "maxAngle": 45.0
+    }
+  },
+  "POST_PROCESSING": {
+    "keys": [
+      {
+        "height": 3000.0,
+        "shadowIntensity": 1.75,
+        "starIntensity": 0.0,
+        "hueShift": 0.0,
+        "saturation": 0.95,
+        "contrast": 1.2,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+      },
+      {
+        "height": 5000.0,
+        "shadowIntensity": 1.75,
+        "starIntensity": 1.0,
+        "hueShift": 0.0,
+        "saturation": 0.95,
+        "contrast": 1.2,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+      }
+    ]
+  },
+  "ORBIT_DATA": {
+    "parent": "Sun",
+    "semiMajorAxis": 8878924243.95785,
+    "smaDifficultyScale": {
+      "Normal": 1.0,
+      "Hard": 5.0,
+      "Realistic": 20.0
+    },
+    "eccentricity": 0.194264384739069,
+    "argumentOfPeriapsis": 244.4961591,
+    "direction": 1,
+    "multiplierSOI": 1.0,
+    "soiDifficultyScale": {}
+  },
+  "ACHIEVEMENT_DATA": {
+    "Landed": true,
+    "Takeoff": true,
+    "Atmosphere": true,
+    "Orbit": true,
+    "Crash": true
+  },
+  "LANDMARKS": [
+    {
+      "name": "Urashima Crater",
+      "angle": 357.1,
+      "startAngle": 339.6,
+      "endAngle": 14.6
+    },
+    {
+      "name": "Kintaro Crater",
+      "angle": 292.2,
+      "startAngle": 280,
+      "endAngle": 300.7
+    },
+    {
+      "name": "Brabo Crater",
+      "angle": 220.3,
+      "startAngle": 211.7,
+      "endAngle": 228.9
+    },
+    {
+      "name": "Kolobok Crater",
+      "angle": 116.5,
+      "startAngle": 105.7,
+      "endAngle": 127.8
+    },
+    {
+      "name": "Ryujin Dorsum",
+      "angle": 180,
+      "startAngle": 0,
+      "endAngle": 360
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "version": "1.5",
+  "BASE_DATA": {
+    "radius": 30750.0,
+    "radiusDifficultyScale": {
+      "Normal": 1.0,
+      "Hard": 5.0,
+      "Realistic": 20.0
+    },
+    "gravity": 0.3,
+    "gravityDifficultyScale": {},
+    "timewarpHeight": 500.0,
+    "velocityArrowsHeight": "NaN",
+    "mapColor": {
+      "r": 0.458,
+      "g": 0.399,
+      "b": 0.309,
+      "a": 1.0
+    },
+    "significant": true,
+    "rotateCamera": true
+  },
+  "ATMOSPHERE_PHYSICS_DATA": {
+    "height": 10000.0,
+    "density": 1.35067e-10,
+    "curve": 21.46,
+    "curveScale": {},
+    "parachuteMultiplier": 0.429111,
+    "upperAtmosphere": 0.1072778,
+    "heightDifficultyScale": {},
+    "shockwaveIntensity": 0.5,
+    "minHeatingVelocityMultiplier": 1.0
+  },
+  "TERRAIN_DATA": {
+    "TERRAIN_TEXTURE_DATA": {
+      "planetTexture": "ACSSGonggong",
+      "planetTextureCutout": -0.999,
+      "surfaceTexture_A": "Dark_Dust",
+      "surfaceTextureSize_A": {
+        "x": 20.0,
+        "y": 8.0
+      },
+      "surfaceTexture_B": "Hard_Rocks",
+      "surfaceTextureSize_B": {
+        "x": 40.0,
+        "y": 16.0
+      },
+      "terrainTexture_C": "Soft_Rocks",
+      "terrainTextureSize_C": {
+        "x": 280.0,
+        "y": 145.0
+      },
+      "surfaceLayerSize": 50.0,
+      "minFade": 0.0,
+      "maxFade": 1.0,
+      "shadowIntensity": 9.0,
+      "shadowHeight": 10.0
+    },
+    "terrainFormulaDifficulties": {
+      "Normal": [
+        "OUTPUT = AddHeightMap(ACSSGonggong_Fictional.txt, 193207.94819577228416545256807169, 0.05)"
+      ],
+      "Hard": [
+        "OUTPUT = AddHeightMap(ACSSGonggong_Fictional.txt, 966039.74097886142082726284035845, 0.25)"
+      ],
+      "Realistic": [
+        "OUTPUT = AddHeightMap(ACSSGonggong_Fictional.txt, 3864158.9639154456833090513614338, 1)"
+      ]
+    },
+    "textureFormula": [
+      "OUTPUT = AddHeightMap(Perlin, 6793.69411338793, 1, Curve8)",
+      "OUTPUT = ApplyCurve(Curve8)",
+      "OUTPUT = ApplyCurve(Curve8)"
+    ],
+    "verticeSize": 2.0,
+    "collider": true,
+    "flatZones": [],
+    "rocks": {
+      "rockType": "Rock Square",
+      "rockDensity": 0.5,
+      "minSize": 0.12,
+      "maxSize": 0.4,
+      "powerCurve": 2.0,
+      "maxAngle": 25.0
+    }
+  },
+  "POST_PROCESSING": {
+    "keys": [
+      {
+        "height": 10000.0,
+        "shadowIntensity": 1.75,
+        "starIntensity": 0.0,
+        "hueShift": 0.0,
+        "saturation": 0.95,
+        "contrast": 1.2,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+      },
+      {
+        "height": 15000.0,
+        "shadowIntensity": 1.75,
+        "starIntensity": 1.0,
+        "hueShift": 0.0,
+        "saturation": 0.95,
+        "contrast": 1.2,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+      }
+    ]
+  },
+  "ORBIT_DATA": {
+    "parent": "Sun",
+    "semiMajorAxis": 501650623184.0005,
+    "smaDifficultyScale": {
+      "Normal": 1.0,
+      "Hard": 5.0,
+      "Realistic": 20.0
+    },
+    "eccentricity": 0.5034153243889689,
+    "argumentOfPeriapsis": 303.797040562054,
+    "direction": 1,
+    "multiplierSOI": 1,
+    "soiDifficultyScale": {}
+  },
+  "ACHIEVEMENT_DATA": {
+    "Landed": true,
+    "Takeoff": true,
+    "Atmosphere": true,
+    "Orbit": true,
+    "Crash": true
+  },
+  "LANDMARKS": []
+}

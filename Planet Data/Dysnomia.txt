@@ -1,0 +1,112 @@
+{
+  "version": "1.5",
+  "BASE_DATA": {
+    "radius": 17500.0,
+    "radiusDifficultyScale": {
+      "Normal": 1.0,
+      "Hard": 5.0,
+      "Realistic": 20.0
+    },
+    "gravity": 0.04486,
+    "gravityDifficultyScale": {},
+    "timewarpHeight": 5000.0,
+    "velocityArrowsHeight": "NaN",
+    "mapColor": {
+      "r": 0.189,
+      "g": 0.189,
+      "b": 0.189,
+      "a": 1.0
+    },
+    "significant": true,
+    "rotateCamera": true
+  },
+  "TERRAIN_DATA": {
+    "TERRAIN_TEXTURE_DATA": {
+      "planetTexture": "ACSSDysnomia",
+      "planetTextureCutout": 0.99,
+      "surfaceTexture_A": "Ice",
+      "surfaceTextureSize_A": {
+        "x": 70.0,
+        "y": 25.0
+      },
+      "surfaceTexture_B": "Ice",
+      "surfaceTextureSize_B": {
+        "x": 70.0,
+        "y": 25.0
+      },
+      "terrainTexture_C": "Ice",
+      "terrainTextureSize_C": {
+        "x": 1200.0,
+        "y": 400.0
+      },
+      "surfaceLayerSize": 60.0,
+      "minFade": 0.0,
+      "maxFade": 0.6,
+      "shadowIntensity": 4.0,
+      "shadowHeight": 2.0
+    },
+    "terrainFormulaDifficulties": {
+      "Normal": [
+        "OUTPUT = AddHeightMap(ACSSDysnomia_Fictional.txt, 109955.74287564276334619251841478, 0.05)"
+      ],
+      "Hard": [
+        "OUTPUT = AddHeightMap(ACSSDysnomia_Fictional.txt, 549778.71437821381673096259207391, 0.25)"
+      ],
+      "Realistic": [
+        "OUTPUT = AddHeightMap(ACSSDysnomia_Fictional.txt, 2199114.8575128552669238503682957, 1)"
+      ]
+    },
+    "textureFormula": [],
+    "verticeSize": 2.0,
+    "collider": true,
+    "flatZones": []
+  },
+  "POST_PROCESSING": {
+    "keys": [
+      {
+        "height": 500.0,
+        "shadowIntensity": 1.4,
+        "starIntensity": 1.0,
+        "hueShift": 5.0,
+        "saturation": 1.0,
+        "contrast": 1.05,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+      },
+      {
+        "height": 15000.0,
+        "shadowIntensity": 1.65,
+        "starIntensity": 1.0,
+        "hueShift": 5.0,
+        "saturation": 1.0,
+        "contrast": 1.025,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+      }
+    ]
+  },
+  "ORBIT_DATA": {
+    "parent": "Eris",
+    "semiMajorAxis": 1863722.94303112,
+    "smaDifficultyScale": {
+      "Normal": 1.0,
+      "Hard": 5.0,
+      "Realistic": 20.0
+    },
+    "eccentricity": 0.00610162755848335,
+    "argumentOfPeriapsis": 76.43256088,
+    "direction": 1,
+    "multiplierSOI": 1,
+    "soiDifficultyScale": {}
+  },
+  "ACHIEVEMENT_DATA": {
+    "Landed": true,
+    "Takeoff": true,
+    "Atmosphere": true,
+    "Orbit": true,
+    "Crash": true
+  },
+  "LANDMARKS": []
+}

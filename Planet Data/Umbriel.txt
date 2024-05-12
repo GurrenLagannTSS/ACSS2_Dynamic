@@ -1,0 +1,131 @@
+{
+  "version": "1.5",
+  "BASE_DATA": {
+    "radius": 29235.0,
+    "radiusDifficultyScale": {
+      "Normal": 1.0,
+      "Hard": 5.0,
+      "Realistic": 20.0
+    },
+    "gravity": 0.234,
+    "gravityDifficultyScale": {},
+    "timewarpHeight": 5000.0,
+    "velocityArrowsHeight": "NaN",
+    "mapColor": {
+      "r": 0.539,
+      "g": 0.537,
+      "b": 0.537,
+      "a": 1.0
+    },
+    "significant": true,
+    "rotateCamera": true
+  },
+  "TERRAIN_DATA": {
+    "TERRAIN_TEXTURE_DATA": {
+      "planetTexture": "ACSSUmbriel",
+      "planetTextureCutout": 0.99,
+      "surfaceTexture_A": "Ice",
+      "surfaceTextureSize_A": {
+        "x": 70.0,
+        "y": 25.0
+      },
+      "surfaceTexture_B": "Ice",
+      "surfaceTextureSize_B": {
+        "x": 70.0,
+        "y": 25.0
+      },
+      "terrainTexture_C": "Ice",
+      "terrainTextureSize_C": {
+        "x": 1200.0,
+        "y": 400.0
+      },
+      "surfaceLayerSize": 60.0,
+      "minFade": 0.0,
+      "maxFade": 0.6,
+      "shadowIntensity": 4.0,
+      "shadowHeight": 2.0
+    },
+    "terrainFormulaDifficulties": {
+      "Normal": [
+        "OUTPUT = AddHeightMap(ACSSUmbriel.txt, 183688.9224553, 0.05)"
+      ],
+      "Hard": [
+        "OUTPUT = AddHeightMap(ACSSUmbriel.txt, 918444.6122769, 0.25)"
+      ],
+      "Realistic": [
+        "OUTPUT = AddHeightMap(ACSSUmbriel.txt, 3673778.4491079, 1)"
+      ]
+    },
+    "textureFormula": [],
+    "verticeSize": 2.0,
+    "collider": true,
+    "flatZones": []
+  },
+  "POST_PROCESSING": {
+    "keys": [
+      {
+        "height": 500.0,
+        "shadowIntensity": 1.4,
+        "starIntensity": 1.0,
+        "hueShift": 5.0,
+        "saturation": 1.0,
+        "contrast": 1.05,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+      },
+      {
+        "height": 15000.0,
+        "shadowIntensity": 1.65,
+        "starIntensity": 1.0,
+        "hueShift": 5.0,
+        "saturation": 1.0,
+        "contrast": 1.025,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+      }
+    ]
+  },
+  "ORBIT_DATA": {
+    "parent": "Uranus",
+    "semiMajorAxis": 13299199.92241795,
+    "smaDifficultyScale": {
+      "Normal": 1.0,
+      "Hard": 5.0,
+      "Realistic": 20.0
+    },
+    "eccentricity": 0.00384775442793402,
+    "argumentOfPeriapsis": 183.0678863,
+    "direction": -1,
+    "multiplierSOI": 1,
+    "soiDifficultyScale": {}
+  },
+  "ACHIEVEMENT_DATA": {
+    "Landed": true,
+    "Takeoff": true,
+    "Atmosphere": true,
+    "Orbit": true,
+    "Crash": true
+  },
+  "LANDMARKS": [
+    {
+      "name": "Wunda Crater",
+      "angle": 176.4,
+      "startAngle": 169.7,
+      "endAngle": 183.1
+    },
+    {
+      "name": "Vuver Crater",
+      "angle": 138.4,
+      "startAngle": 133.7,
+      "endAngle": 143.1
+    },
+    {
+      "name": "Skynd Crater",
+      "angle": 118.3,
+      "startAngle": 114.8,
+      "endAngle": 121.8
+    }
+  ]
+}

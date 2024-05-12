@@ -1,0 +1,488 @@
+{
+  "version": "1.5",
+  "BASE_DATA": {
+    "radius": 86870.0,
+    "radiusDifficultyScale": {
+      "Normal": 1.0,
+      "Hard": 5.0,
+      "Realistic": 20.0
+    },
+    "gravity": 1.622,
+    "gravityDifficultyScale": {
+      "Normal": 1.0,
+      "Hard": 1.0,
+      "Realistic": 1.0
+    },
+    "timewarpHeight": 5000.0,
+    "velocityArrowsHeight": "NaN",
+    "mapColor": {
+      "r": 0.344,
+      "g": 0.352,
+      "b": 0.393,
+      "a": 1.0
+    },
+    "significant": true,
+    "rotateCamera": true
+  },
+  "ATMOSPHERE_PHYSICS_DATA": {
+    "height": 4343.75,
+    "density": 1.74617e-17,
+    "curve": 2.01,
+    "curveScale": {},
+    "parachuteMultiplier": 2.25064,
+    "upperAtmosphere": 0.87245181304,
+    "heightDifficultyScale": {},
+    "shockwaveIntensity": 1.0,
+    "minHeatingVelocityMultiplier": 1.0
+  },
+  "TERRAIN_DATA": {
+    "TERRAIN_TEXTURE_DATA": {
+      "planetTexture": "ACSSMoon",
+      "planetTextureCutout": -0.999,
+      "surfaceTexture_A": "Dark_Dust",
+      "surfaceTextureSize_A": {
+        "x": 20.0,
+        "y": 8.0
+      },
+      "surfaceTexture_B": "Hard_Rocks",
+      "surfaceTextureSize_B": {
+        "x": 40.0,
+        "y": 16.0
+      },
+      "terrainTexture_C": "Soft_Rocks",
+      "terrainTextureSize_C": {
+        "x": 280.0,
+        "y": 145.0
+      },
+      "surfaceLayerSize": 50.0,
+      "minFade": 0.0,
+      "maxFade": 1.0,
+      "shadowIntensity": 9.0,
+      "shadowHeight": 10.0
+    },
+    "terrainFormulaDifficulties": {
+      "Normal": [
+        "OUTPUT = AddHeightMap(ACSSMoon.txt, 545820.30763469067725049966141098, 0.05)"
+      ],
+      "Hard": [
+        "OUTPUT = AddHeightMap(ACSSMoon.txt, 1364550.7690867266931262491535275, 0.25)"
+      ],
+      "Realistic": [
+        "OUTPUT = AddHeightMap(ACSSMoon.txt, 5458203.0763469067725049966141098, 1)"
+      ]
+    },
+    "textureFormula": [
+      "OUTPUT = AddHeightMap(Perlin, 6793.69411338793, 1, Curve8)",
+      "OUTPUT = ApplyCurve(Curve8)",
+      "OUTPUT = ApplyCurve(Curve8)"
+    ],
+    "verticeSize": 2.0,
+    "collider": true,
+    "flatZones": [],
+    "rocks": {
+      "rockType": "Rock Square",
+      "rockDensity": 0.5,
+      "minSize": 0.12,
+      "maxSize": 0.4,
+      "powerCurve": 2.0,
+      "maxAngle": 25.0
+    }
+  },
+  "POST_PROCESSING": {
+    "keys": [
+      {
+        "height": 10000.0,
+        "shadowIntensity": 1.75,
+        "starIntensity": 0.0,
+        "hueShift": 0.0,
+        "saturation": 0.95,
+        "contrast": 1.2,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+      },
+      {
+        "height": 15000.0,
+        "shadowIntensity": 1.75,
+        "starIntensity": 1.0,
+        "hueShift": 0.0,
+        "saturation": 0.95,
+        "contrast": 1.2,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+      }
+    ]
+  },
+  "ORBIT_DATA": {
+    "parent": "Earth",
+    "semiMajorAxis": 19221064.22615578,
+    "smaDifficultyScale": {
+      "Normal": 1.0,
+      "Hard": 5.0,
+      "Realistic": 20.0
+    },
+    "eccentricity": 0.05298940093961609,
+    "argumentOfPeriapsis": 62.21983546230778,
+    "direction": 1,
+    "multiplierSOI": 1,
+    "soiDifficultyScale": {}
+  },
+  "ACHIEVEMENT_DATA": {
+    "Landed": true,
+    "Takeoff": true,
+    "Atmosphere": true,
+    "Orbit": true,
+    "Crash": true
+  },
+  "LANDMARKS": [
+    { 
+	  "name": "Mare Smythii",
+      "angle": 3,
+      "startAngle": 357.6,
+      "endAngle": 9.09999999999999
+    },
+    {
+      "name": "Schubert J Crater",
+      "angle": 11,
+      "startAngle": 10.7,
+      "endAngle": 11.4
+    },
+    {
+      "name": "Jenkins Crater",
+      "angle": 11.9,
+      "startAngle": 11.4,
+      "endAngle": 12.5
+    },
+    {
+      "name": "Schubert X Crater",
+      "angle": 13.1,
+      "startAngle": 12.5,
+      "endAngle": 13.4
+    },
+    {
+      "name": "Nobili Crater",
+      "angle": 14,
+      "startAngle": 13.4,
+      "endAngle": 14.7
+    },
+    {
+      "name": "Maclaurin X Crater",
+      "angle": 21.2,
+      "startAngle": 20.9,
+      "endAngle": 21.5
+    },
+    {
+      "name": "Maclaurin O Crater",
+      "angle": 21.9,
+      "startAngle": 21.5,
+      "endAngle": 23.1
+    },
+    {
+      "name": "Mare Spumans",
+      "angle": 25,
+      "startAngle": 23.8,
+      "endAngle": 26.6
+    },
+    {
+      "name": "Sinus Successus",
+      "angle": 31.5,
+      "startAngle": 29.8,
+      "endAngle": 33.5
+    },
+    {
+      "name": "Mare Fecunditatis",
+      "angle": 40,
+      "startAngle": 33.5,
+      "endAngle": 47.8
+    },
+    {
+      "name": "Taruntius P Crater",
+      "angle": 38.4,
+      "startAngle": 38.3,
+      "endAngle": 38.5
+    },
+    {
+      "name": "Lubbock R Crater",
+      "angle": 49.6,
+      "startAngle": 49.1,
+      "endAngle": 49.9
+    },
+    {
+      "name": "Maskelyne T Crater",
+      "angle": 53.4,
+      "startAngle": 53.3,
+      "endAngle": 53.5
+    },
+    {
+      "name": "Maskelyne A Crater",
+      "angle": 55.9,
+      "startAngle": 55.4,
+      "endAngle": 56.3
+    },
+    {
+      "name": "Mare Tranquilitatis",
+      "angle": 61,
+      "startAngle": 58.1,
+      "endAngle": 71.5
+    },
+    {
+      "name": "Lade A Crater",
+      "angle": 77.2,
+      "startAngle": 76.4,
+      "endAngle": 78
+    },
+    {
+      "name": "Lade B Crater",
+      "angle": 80.1,
+      "startAngle": 79.8,
+      "endAngle": 80.6
+    },
+    {
+      "name": "Rhaeticus F Crater",
+      "angle": 83.6,
+      "startAngle": 83.3,
+      "endAngle": 83.8
+    },
+    {
+      "name": "Rhaeticus Crater",
+      "angle": 85.1,
+      "startAngle": 84.4,
+      "endAngle": 86.3
+    },
+    {
+      "name": "Rhaeticus L Crater",
+      "angle": 86.5,
+      "startAngle": 86.3,
+      "endAngle": 86.7
+    },
+    {
+      "name": "Sinus Medii",
+      "angle": 90,
+      "startAngle": 87.2,
+      "endAngle": 92.8
+    },
+    {
+      "name": "Mösting E Crater",
+      "angle": 94.6,
+      "startAngle": 93.9,
+      "endAngle": 95.2
+    },
+    {
+      "name": "Sömmering Crater",
+      "angle": 97.5,
+      "startAngle": 97,
+      "endAngle": 98
+    },
+    {
+      "name": "Sinus Aestuum",
+      "angle": 104,
+      "startAngle": 100.8,
+      "endAngle": 110.7
+    },
+    {
+      "name": "Lansberg Crater",
+      "angle": 116.6,
+      "startAngle": 116.1,
+      "endAngle": 117.2
+    },
+    {
+      "name": "Mare Insularum",
+      "angle": 121,
+      "startAngle": 112.6,
+      "endAngle": 128
+    },
+    {
+      "name": "Oceanus Procellarum",
+      "angle": 125,
+      "startAngle": 128,
+      "endAngle": 155.7
+    },
+    {
+      "name": "Lohrmann Crater",
+      "angle": 157.4,
+      "startAngle": 157.1,
+      "endAngle": 157.6
+    },
+    {
+      "name": "Schlüter P Crater",
+      "angle": 175.2,
+      "startAngle": 174.9,
+      "endAngle": 175.6
+    },
+    {
+      "name": "Catena Michelson",
+      "angle": 203,
+      "startAngle": 202.8,
+      "endAngle": 203.2
+    },
+    {
+      "name": "Hertzsprung L Crater",
+      "angle": 218.7,
+      "startAngle": 218.1,
+      "endAngle": 219.3
+    },
+    {
+      "name": "Hertzsprung Crater",
+      "angle": 218.8,
+      "startAngle": 209.3,
+      "endAngle": 225.1
+    },
+    {
+      "name": "Hertzsprung P Crater",
+      "angle": 220.3,
+      "startAngle": 219.9,
+      "endAngle": 220.6
+    },
+    {
+      "name": "Hertzsprung R Crater",
+      "angle": 222.8,
+      "startAngle": 222.4,
+      "endAngle": 223.2
+    },
+    {
+      "name": "Hertzsprung S Crater",
+      "angle": 223.4,
+      "startAngle": 223.2,
+      "endAngle": 224.1
+    },
+    {
+      "name": "Vavilov D Crater",
+      "angle": 227.3,
+      "startAngle": 225.9,
+      "endAngle": 227.5
+    },
+    {
+      "name": "Vavilov Crater",
+      "angle": 228.8,
+      "startAngle": 227.5,
+      "endAngle": 230.1
+    },
+    {
+      "name": "Kibalʹchich R Crater",
+      "angle": 240.6,
+      "startAngle": 240.3,
+      "endAngle": 240.9
+    },
+    {
+      "name": "Korolev C Crater",
+      "angle": 243.3,
+      "startAngle": 242.4,
+      "endAngle": 244.1
+    },
+    {
+      "name": "Korolev Crater",
+      "angle": 247.3,
+      "startAngle": 242.3,
+      "endAngle": 251.6
+    },
+    {
+      "name": "Korolev W Crater",
+      "angle": 250.5,
+      "startAngle": 250,
+      "endAngle": 251.1
+    },
+    {
+      "name": "Congreve Crater",
+      "angle": 257.8,
+      "startAngle": 256.8,
+      "endAngle": 258.8
+    },
+    {
+      "name": "Congreve U Crater",
+      "angle": 260.7,
+      "startAngle": 259.8,
+      "endAngle": 261.6
+    },
+    {
+      "name": "Krasovskiy L Crater",
+      "angle": 265,
+      "startAngle": 264.3,
+      "endAngle": 265.5
+    },
+    {
+      "name": "Coriolis G Crater",
+      "angle": 275.5,
+      "startAngle": 275.1,
+      "endAngle": 275.8
+    },
+    {
+      "name": "Coriolis Crater",
+      "angle": 278.2,
+      "startAngle": 277.1,
+      "endAngle": 279.4
+    },
+    {
+      "name": "Coriolis S Crater",
+      "angle": 280.4,
+      "startAngle": 280.1,
+      "endAngle": 280.7
+    },
+    {
+      "name": "Vening Meinesz Crater",
+      "angle": 287.2,
+      "startAngle": 285.9,
+      "endAngle": 288.7
+    },
+    {
+      "name": "Green M Crater",
+      "angle": 316.9,
+      "startAngle": 316.4,
+      "endAngle": 317.4
+    },
+    {
+      "name": "Catena Gregory",
+      "angle": 320.7,
+      "startAngle": 320.6,
+      "endAngle": 320.8
+    },
+    {
+      "name": "Gregory Q Crater",
+      "angle": 324,
+      "startAngle": 322.7,
+      "endAngle": 325.2
+    },
+    {
+      "name": "Soddy G Crater",
+      "angle": 326.2,
+      "startAngle": 326,
+      "endAngle": 326.4
+    },
+    {
+      "name": "Soddy Crater",
+      "angle": 328.2,
+      "startAngle": 327.6,
+      "endAngle": 328.9
+    },
+    {
+      "name": "Heron H Crater",
+      "angle": 329.3,
+      "startAngle": 329.1,
+      "endAngle": 329.5
+    },
+    {
+      "name": "Abul Wáfa Q Crater",
+      "angle": 334.1,
+      "startAngle": 333.6,
+      "endAngle": 334.6
+    },
+    {
+      "name": "Buisson Z Crater",
+      "angle": 336.8,
+      "startAngle": 334.7,
+      "endAngle": 338.9
+    },
+    {
+      "name": "Saha E Crater",
+      "angle": 341.9,
+      "startAngle": 341.5,
+      "endAngle": 342.3
+    },
+    {
+      "name": "Saha D Crater",
+      "angle": 342.5,
+      "startAngle": 342.3,
+      "endAngle": 342.7
+    }
+  ]
+}

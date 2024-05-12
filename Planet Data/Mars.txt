@@ -1,0 +1,353 @@
+{
+  "version": "1.5",
+  "BASE_DATA": {
+    "radius": 169809.5,
+    "radiusDifficultyScale": {
+      "Normal": 1.0,
+      "Hard": 5.0,
+      "Realistic": 20.0
+    },
+    "gravity": 3.72076,
+    "gravityDifficultyScale": {},
+    "timewarpHeight": 15000.0,
+    "velocityArrowsHeight": 3000.0,
+    "mapColor": {
+      "r": 0.511,
+      "g": 0.441,
+      "b": 0.34,
+      "a": 1.0
+    },
+    "significant": true,
+    "rotateCamera": true
+  },
+  "ATMOSPHERE_PHYSICS_DATA": {
+    "height": 23000.0,
+    "density": 6.40445e-5,
+    "curve": 19.19,
+    "curveScale": {},
+    "parachuteMultiplier": 1.104072,
+    "upperAtmosphere": 0.12,
+    "heightDifficultyScale": {},
+    "shockwaveIntensity": 0.35,
+    "minHeatingVelocityMultiplier": 1.0
+  },
+  "ATMOSPHERE_VISUALS_DATA": {
+    "GRADIENT": {
+      "positionZ": 5000,
+      "height": 25000.0,
+      "texture": "Atmo_Mars"
+    },
+    "CLOUDS": {
+      "texture": "None",
+      "startHeight": -1.0,
+      "width": 0.0,
+      "height": -1.0,
+      "alpha": 0.0,
+      "velocity": 0.0
+    },
+    "FOG": {
+      "keys": [
+        {
+          "color": {
+            "r": 0.68235296,
+            "g": 0.474509835,
+            "b": 0.407843173,
+            "a": 0.0
+          },
+          "distance": 0.0
+        },
+        {
+          "color": {
+            "r": 0.68235296,
+            "g": 0.474352956,
+            "b": 0.407058835,
+            "a": 0.3
+          },
+          "distance": 15000.0
+        }
+      ]
+    }
+  },
+  "TERRAIN_DATA": {
+    "TERRAIN_TEXTURE_DATA": {
+      "planetTexture": "ACSSMars",
+      "planetTextureCutout": 0.99,
+      "surfaceTexture_A": "Soft_Rocks",
+      "surfaceTextureSize_A": {
+        "x": 25.0,
+        "y": 12.0
+      },
+      "surfaceTexture_B": "Hard_Rocks",
+      "surfaceTextureSize_B": {
+        "x": 40.0,
+        "y": 18.0
+      },
+      "terrainTexture_C": "Soft_Rocks",
+      "terrainTextureSize_C": {
+        "x": 380.0,
+        "y": 170.0
+      },
+      "surfaceLayerSize": 60.0,
+      "minFade": 0.0,
+      "maxFade": 1.0,
+      "shadowIntensity": 7.0,
+      "shadowHeight": 25.0
+    },
+    "terrainFormulaDifficulties": {
+      "Normal": [
+        "OUTPUT = AddHeightMap(ACSSMars.txt, 1066944.555419511989853444483186, 0.05)"
+      ],
+      "Hard": [
+        "OUTPUT = AddHeightMap(ACSSMars.txt, 5334722.77709755994926722241593, 0.25)"
+      ],
+      "Realistic": [
+        "OUTPUT = AddHeightMap(ACSSMars.txt, 21338891.10839023979706888966372, 1)"
+      ]
+    },
+    "textureFormula": [],
+    "verticeSize": 3.0,
+    "collider": true,
+    "flatZones": [],
+    "rocks": {
+      "rockType": "Rock Square",
+      "rockDensity": 0.85,
+      "minSize": 0.16,
+      "maxSize": 0.8,
+      "powerCurve": 3.0,
+      "maxAngle": 35.0
+    }
+  },
+  "POST_PROCESSING": {
+    "keys": [
+      {
+        "height": 3500.0,
+        "shadowIntensity": 1.4,
+        "starIntensity": 0.0,
+        "hueShift": 1.0,
+        "saturation": 0.95,
+        "contrast": 0.95,
+        "red": 1.1,
+        "green": 1.1,
+        "blue": 1.0
+      },
+      {
+        "height": 20000.0,
+        "shadowIntensity": 1.75,
+        "starIntensity": 0.0,
+        "hueShift": 0.0,
+        "saturation": 0.95,
+        "contrast": 1.2,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+      },
+      {
+        "height": 30000.0,
+        "shadowIntensity": 1.75,
+        "starIntensity": 0.0,
+        "hueShift": 0.0,
+        "saturation": 0.95,
+        "contrast": 1.2,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+      },
+      {
+        "height": 40000.0,
+        "shadowIntensity": 1.75,
+        "starIntensity": 1.0,
+        "hueShift": 0.0,
+        "saturation": 0.95,
+        "contrast": 1.2,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+      }
+    ]
+  },
+  "ORBIT_DATA": {
+    "parent": "Sun",
+    "semiMajorAxis": 11400489500.3227,
+    "smaDifficultyScale": {
+      "Normal": 1.0,
+      "Hard": 5.0,
+      "Realistic": 20.0
+    },
+    "eccentricity": 0.09315045217520594,
+    "argumentOfPeriapsis": 146.96286740238952,
+    "direction": 1,
+    "multiplierSOI": 1,
+    "soiDifficultyScale": {}
+  },
+  "ACHIEVEMENT_DATA": {
+    "Landed": true,
+    "Takeoff": true,
+    "Atmosphere": true,
+    "Orbit": true,
+    "Crash": true
+  },
+  "LANDMARKS": [
+    {
+      "name": "Tyrrhena Terra",
+      "angle": 0,
+      "startAngle": 345,
+      "endAngle": 10
+    },
+    {
+      "name": "Lipany Crater",
+      "angle": 10.3,
+      "startAngle": 10,
+      "endAngle": 10.7
+    },
+    {
+      "name": "Schroeter Crater",
+      "angle": 34.1,
+      "startAngle": 32.7,
+      "endAngle": 35.5
+    },
+    {
+      "name": "Teisserenc de Bort Crater",
+      "angle": 44.8,
+      "startAngle": 44.2,
+      "endAngle": 45.7
+    },
+    {
+      "name": "Verde Vallis",
+      "angle": 60.45,
+      "startAngle": 60.4,
+      "endAngle": 60.5
+    },
+    {
+      "name": "Tuscaloosa Crater",
+      "angle": 61.3,
+      "startAngle": 60.8,
+      "endAngle": 61.8
+    },
+    {
+      "name": "Kaporo Crater",
+      "angle": 75.7,
+      "startAngle": 75.3,
+      "endAngle": 76
+    },
+    {
+      "name": "Schiaparelli Crater",
+      "angle": 73.4,
+      "startAngle": 70.6,
+      "endAngle": 76.3
+    },
+    {
+      "name": "Iani Chaos",
+      "angle": 107.6,
+      "startAngle": 106.7,
+      "endAngle": 108.4
+    },
+    {
+      "name": "Hydraotes Chaos",
+      "angle": 124.1,
+      "startAngle": 122.3,
+      "endAngle": 129
+    },
+    {
+      "name": "Ravi Vallis",
+      "angle": 129.6,
+      "startAngle": 129,
+      "endAngle": 130.8
+    },
+    {
+      "name": "Orson Welles",
+      "angle": 135.8,
+      "startAngle": 134.7,
+      "endAngle": 136.8
+    },
+    {
+      "name": "Mutch Crater",
+      "angle": 145.1,
+      "startAngle": 143.4,
+      "endAngle": 146.9
+    },
+    {
+      "name": "Baetis Chaos",
+      "angle": 150.4,
+      "startAngle": 150,
+      "endAngle": 150.8
+    },
+    {
+      "name": "Juventae Dorsa",
+      "angle": 159.2,
+      "startAngle": 156.1,
+      "endAngle": 166.2
+    },
+    {
+      "name": "Hebes Chasma",
+      "angle": 166.6,
+      "startAngle": 166.2,
+      "endAngle": 166.9
+    },
+    {
+      "name": "Echus Chasma",
+      "angle": 170.1,
+      "startAngle": 169.4,
+      "endAngle": 170.9
+    },
+    {
+      "name": "Noctis Fossae",
+      "angle": 190.9,
+      "startAngle": 190.2,
+      "endAngle": 191.7
+    },
+    {
+      "name": "Pavonis Mons",
+      "angle": 202.8,
+      "startAngle": 200.4,
+      "endAngle": 206.3
+    },
+    {
+      "name": "Amazonis Mensa",
+      "angle": 238.5,
+      "startAngle": 237.6,
+      "endAngle": 239.7
+    },
+    {
+      "name": "Nicholson Crater",
+      "angle": 254.5,
+      "startAngle": 253.3,
+      "endAngle": 255.5
+    },
+    {
+      "name": "Zephyria Planum",
+      "angle": 297,
+      "startAngle": 294,
+      "endAngle": 300
+    },
+    {
+      "name": "Aeolis Serpens",
+      "angle": 302.25,
+      "startAngle": 302.2,
+      "endAngle": 302.3
+    },
+    {
+      "name": "Gunjur Crater",
+      "angle": 303.3,
+      "startAngle": 303.1,
+      "endAngle": 303.7
+    },
+    {
+      "name": "Aeolis Planum",
+      "angle": 305,
+      "startAngle": 302,
+      "endAngle": 308
+    },
+    {
+      "name": "Escalante Crater",
+      "angle": 334.6,
+      "startAngle": 333.9,
+      "endAngle": 335.2
+    },
+    {
+      "name": "Amenthes Planum",
+      "angle": 342,
+      "startAngle": 339,
+      "endAngle": 345
+    }
+  ]
+}

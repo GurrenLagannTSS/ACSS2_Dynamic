@@ -1,0 +1,155 @@
+{
+  "version": "1.5",
+  "BASE_DATA": {
+    "radius": 11790.0,
+    "radiusDifficultyScale": {
+      "Normal": 1.0,
+      "Hard": 5.0,
+      "Realistic": 20.0
+    },
+    "gravity": 0.077,
+    "gravityDifficultyScale": {},
+    "timewarpHeight": 5000.0,
+    "velocityArrowsHeight": "NaN",
+    "mapColor": {
+      "r": 0.713,
+      "g": 0.717,
+      "b": 0.725,
+      "a": 1.0
+    },
+    "significant": true,
+    "rotateCamera": true
+  },
+  "TERRAIN_DATA": {
+    "TERRAIN_TEXTURE_DATA": {
+      "planetTexture": "ACSSMiranda",
+      "planetTextureCutout": 0.99,
+      "surfaceTexture_A": "Ice",
+      "surfaceTextureSize_A": {
+        "x": 70.0,
+        "y": 25.0
+      },
+      "surfaceTexture_B": "Ice",
+      "surfaceTextureSize_B": {
+        "x": 70.0,
+        "y": 25.0
+      },
+      "terrainTexture_C": "Ice",
+      "terrainTextureSize_C": {
+        "x": 1200.0,
+        "y": 400.0
+      },
+      "surfaceLayerSize": 60.0,
+      "minFade": 0.0,
+      "maxFade": 0.6,
+      "shadowIntensity": 4.0,
+      "shadowHeight": 2.0
+    },
+    "terrainFormulaDifficulties": {
+      "Normal": [
+        "OUTPUT = AddHeightMap(ACSSMiranda.txt, 74078.7547716, 0.05)"
+      ],
+      "Hard": [
+        "OUTPUT = AddHeightMap(ACSSMiranda.txt, 370393.7738582, 0.25)"
+      ],
+      "Realistic": [
+        "OUTPUT = AddHeightMap(ACSSMiranda.txt, 1481575.0954329, 1)"
+      ]
+    },
+    "textureFormula": [],
+    "verticeSize": 2.0,
+    "collider": true,
+    "flatZones": []
+  },
+  "POST_PROCESSING": {
+    "keys": [
+      {
+        "height": 500.0,
+        "shadowIntensity": 1.4,
+        "starIntensity": 1.0,
+        "hueShift": 5.0,
+        "saturation": 1.0,
+        "contrast": 1.05,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+      },
+      {
+        "height": 15000.0,
+        "shadowIntensity": 1.65,
+        "starIntensity": 1.0,
+        "hueShift": 5.0,
+        "saturation": 1.0,
+        "contrast": 1.025,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+      }
+    ]
+  },
+  "ORBIT_DATA": {
+    "parent": "Uranus",
+    "semiMajorAxis": 6493097.80753385,
+    "smaDifficultyScale": {
+      "Normal": 1.0,
+      "Hard": 5.0,
+      "Realistic": 20.0
+    },
+    "eccentricity": 0.0012110785173821,
+    "argumentOfPeriapsis": 29.13673005,
+    "direction": -1,
+    "multiplierSOI": 1,
+    "soiDifficultyScale": {}
+  },
+  "ACHIEVEMENT_DATA": {
+    "Landed": true,
+    "Takeoff": true,
+    "Atmosphere": true,
+    "Orbit": true,
+    "Crash": true
+  },
+  "LANDMARKS": [
+    {
+      "name": "Arden Corona",
+      "angle": 16.3,
+      "startAngle": 331.8,
+      "endAngle": 60.7
+    },
+    {
+      "name": "Dunsinane Regio",
+      "angle": 78.1,
+      "startAngle": 60.7,
+      "endAngle": 95.5
+    },
+    {
+      "name": "Verona Rupes",
+      "angle": 102.2,
+      "startAngle": 95.5,
+      "endAngle": 108.9
+    },
+    {
+      "name": "Sicilia Regio",
+      "angle": 132.8,
+      "startAngle": 108.9,
+      "endAngle": 150.8
+    },
+    {
+      "name": "Syracusa Sulcus",
+      "angle": 157.0,
+      "startAngle": 150.8,
+      "endAngle": 179.4
+    },
+    {
+      "name": "Elsinore Corona",
+      "angle": 192.9,
+      "startAngle": 179.4,
+      "endAngle": 235
+    },
+    {
+      "name": "Mantua Regio",
+      "angle": 269.8,
+      "startAngle": 235,
+      "endAngle": 330.3
+    }
+  ]
+}

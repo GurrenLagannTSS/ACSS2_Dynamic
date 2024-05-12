@@ -1,0 +1,122 @@
+{
+  "version": "1.5",
+  "BASE_DATA": {
+    "radius": 100.0,
+    "radiusDifficultyScale": {
+      "Normal": 1.0,
+      "Hard": 5.0,
+      "Realistic": 20.0
+    },
+    "gravity": 0.034,
+    "gravityDifficultyScale": {
+      "Normal": 1.0,
+      "Hard": 1.0,
+      "Realistic": 1.0
+    },
+    "timewarpHeight": 250.0,
+    "velocityArrowsHeight": -1000.0,
+    "mapColor": {
+      "r": 0.3,
+      "g": 0.3,
+      "b": 0.3,
+      "a": 1.0
+    },
+    "significant": false,
+    "rotateCamera": true
+  },
+  "TERRAIN_DATA": {
+    "TERRAIN_TEXTURE_DATA": {
+      "planetTexture": "Asteroid",
+      "planetTextureCutout": 0.85,
+      "surfaceTexture_A": "Soft_Rocks",
+      "surfaceTextureSize_A": {
+        "x": 24.0,
+        "y": 24.0
+      },
+      "surfaceTexture_B": "Hard_Rocks",
+      "surfaceTextureSize_B": {
+        "x": 24.0,
+        "y": 24.0
+      },
+      "terrainTexture_C": "Circles",
+      "terrainTextureSize_C": {
+        "x": 200.0,
+        "y": 150.0
+      },
+      "surfaceLayerSize": 35.0,
+      "minFade": 0.15,
+      "maxFade": 0.65,
+      "shadowIntensity": 5.0,
+      "shadowHeight": 5.0
+    },
+    "terrainFormulaDifficulties": {
+      "Normal": [
+        "OUTPUT = AddHeightMap( Phobos, 628.318530718, 50)",
+        "OUTPUT = AddHeightMap( Perlin, 628.318530718, 6)",
+        "OUTPUT = AddHeightMap( Perlin, 209.439510239, 0.7)"
+      ]
+    },
+    "textureFormula": [
+      "OUTPUT = AddHeightMap( Perlin, 6283.18530718, 1)"
+    ],
+    "verticeSize": 1.0,
+    "collider": true,
+    "flatZones": [],
+    "rocks": {
+      "rockType": "Rock Square",
+      "rockDensity": 0.9,
+      "minSize": 0.15,
+      "maxSize": 0.9,
+      "powerCurve": 2.5,
+      "maxAngle": 40.0
+    }
+  },
+  "POST_PROCESSING": {
+    "keys": [
+      {
+        "height": 3000.0,
+        "shadowIntensity": 1.75,
+        "starIntensity": 0.0,
+        "hueShift": 0.0,
+        "saturation": 0.95,
+        "contrast": 1.2,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+      },
+      {
+        "height": 5000.0,
+        "shadowIntensity": 1.75,
+        "starIntensity": 1.0,
+        "hueShift": 0.0,
+        "saturation": 0.95,
+        "contrast": 1.2,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+      }
+    ]
+  },
+  "ORBIT_DATA": {
+    "parent": "Earth",
+    "semiMajorAxis": 35508869.45,
+    "smaDifficultyScale": {
+      "Normal": 1.0,
+      "Hard": 5.0,
+      "Realistic": 20.0
+    },
+    "eccentricity": 0.21461157,
+    "argumentOfPeriapsis": 218.769,
+    "direction": 1,
+    "multiplierSOI": 2.0,
+    "soiDifficultyScale": {}
+  },
+  "ACHIEVEMENT_DATA": {
+    "Landed": true,
+    "Takeoff": true,
+    "Atmosphere": true,
+    "Orbit": true,
+    "Crash": true
+  },
+  "LANDMARKS": []
+}

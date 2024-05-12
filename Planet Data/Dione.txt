@@ -1,0 +1,166 @@
+{
+  "version": "1.5",
+  "BASE_DATA": {
+    "radius": 28085.0,
+    "radiusDifficultyScale": {
+      "Normal": 1.0,
+      "Hard": 5.0,
+      "Realistic": 20.0
+    },
+    "gravity": 0.232,
+    "gravityDifficultyScale": {},
+    "timewarpHeight": 5000.0,
+    "velocityArrowsHeight": "NaN",
+    "mapColor": {
+      "r": 0.802,
+      "g": 0.81,
+      "b": 0.807,
+      "a": 1.0
+    },
+    "significant": true,
+    "rotateCamera": true
+  },
+  "ATMOSPHERE_PHYSICS_DATA": {
+    "height": 1404.25,
+    "density": 1.11416e-24,
+    "curve": 2.07,
+    "curveScale": {},
+    "parachuteMultiplier": 0.623922,
+    "upperAtmosphere": 1.11077514687,
+    "heightDifficultyScale": {},
+    "shockwaveIntensity": 0.5,
+    "minHeatingVelocityMultiplier": 1.0
+  },
+  "TERRAIN_DATA": {
+    "TERRAIN_TEXTURE_DATA": {
+      "planetTexture": "ACSSDione",
+      "planetTextureCutout": 0.99,
+      "surfaceTexture_A": "Ice",
+      "surfaceTextureSize_A": {
+        "x": 70.0,
+        "y": 25.0
+      },
+      "surfaceTexture_B": "Ice",
+      "surfaceTextureSize_B": {
+        "x": 70.0,
+        "y": 25.0
+      },
+      "terrainTexture_C": "Ice",
+      "terrainTextureSize_C": {
+        "x": 1200.0,
+        "y": 400.0
+      },
+      "surfaceLayerSize": 60.0,
+      "minFade": 0.0,
+      "maxFade": 0.6,
+      "shadowIntensity": 4.0,
+      "shadowHeight": 2.0
+    },
+    "terrainFormulaDifficulties": {
+      "Normal": [
+        "OUTPUT = AddHeightMap(ACSSDione.txt, 176463.25935213868620444667883881, 0.05)"
+      ],
+      "Hard": [
+        "OUTPUT = AddHeightMap(ACSSDione.txt, 882316.29676069343102223339419405, 0.25)"
+      ],
+      "Realistic": [
+        "OUTPUT = AddHeightMap(ACSSDione.txt, 3529265.1870427737240889335767762, 1)"
+      ]
+    },
+    "textureFormula": [],
+    "verticeSize": 2.0,
+    "collider": true,
+    "flatZones": []
+  },
+  "POST_PROCESSING": {
+    "keys": [
+      {
+        "height": 500.0,
+        "shadowIntensity": 1.4,
+        "starIntensity": 1.0,
+        "hueShift": 5.0,
+        "saturation": 1.0,
+        "contrast": 1.05,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+      },
+      {
+        "height": 15000.0,
+        "shadowIntensity": 1.65,
+        "starIntensity": 1.0,
+        "hueShift": 5.0,
+        "saturation": 1.0,
+        "contrast": 1.025,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+      }
+    ]
+  },
+  "ORBIT_DATA": {
+    "parent": "Saturn",
+    "semiMajorAxis": 18852609.69840305,
+    "smaDifficultyScale": {
+      "Normal": 1.0,
+      "Hard": 5.0,
+      "Realistic": 20.0
+    },
+    "eccentricity": 0.00270292671463866,
+    "argumentOfPeriapsis": 69.14266797,
+    "direction": 1,
+    "multiplierSOI": 1,
+    "soiDifficultyScale": {}
+  },
+  "ACHIEVEMENT_DATA": {
+    "Landed": true,
+    "Takeoff": true,
+    "Atmosphere": true,
+    "Orbit": true,
+    "Crash": true
+  },
+  "LANDMARKS": [
+    {
+      "name": "Eumelus Crater",
+      "angle": 24.04,
+      "startAngle": 22.32,
+      "endAngle": 25.89
+    },
+    {
+      "name": "Fidena Fossae",
+      "angle": 355,
+      "startAngle": 350,
+      "endAngle": 0
+    },
+    {
+      "name": "Janiculum Dorsa",
+      "angle": 315,
+      "startAngle": 310,
+      "endAngle": 320
+    },
+    {
+      "name": "Padua Chasma",
+      "angle": 200,
+      "startAngle": 195,
+      "endAngle": 205
+    },
+    {
+      "name": "Coras Crater",
+      "angle": 181.55,
+      "startAngle": 179.47,
+      "endAngle": 183.71
+    },
+    {
+      "name": "Ilia Crater",
+      "angle": 103.73,
+      "startAngle": 101.05,
+      "endAngle": 106.29
+    },
+    {
+      "name": "Palatine Chasmata",
+      "angle": 165,
+      "startAngle": 160,
+      "endAngle": 170
+    }
+  ]
+}

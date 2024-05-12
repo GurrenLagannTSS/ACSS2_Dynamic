@@ -1,0 +1,102 @@
+{
+  "version": "1.5",
+  "BASE_DATA": {
+    "radius": 1.0,
+    "radiusDifficultyScale": {},
+    "gravity": 264409920.0,
+    "gravityDifficultyScale": {
+      "Normal": 1.0,
+      "Hard": 25.0,
+      "Realistic": 400.0
+    },
+    "timewarpHeight": 8.0,
+    "velocityArrowsHeight": 0.0,
+    "mapColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "significant": true,
+    "rotateCamera": true
+  },
+  "TERRAIN_DATA": {
+    "TERRAIN_TEXTURE_DATA": {
+      "planetTexture": "Barycenter",
+      "planetTextureCutout": 0.995,
+      "surfaceTexture_A": "Ice",
+      "surfaceTextureSize_A": {
+        "x": -1.0,
+        "y": -1.0
+      },
+      "surfaceTexture_B": "Ice",
+      "surfaceTextureSize_B": {
+        "x": -1.0,
+        "y": -1.0
+      },
+      "terrainTexture_C": "Ice",
+      "terrainTextureSize_C": {
+        "x": -1.0,
+        "y": -1.0
+      },
+      "surfaceLayerSize": 60.0,
+      "minFade": 0.0,
+      "maxFade": 0.6,
+      "shadowIntensity": 0.0,
+      "shadowHeight": 0.0
+    },
+    "terrainFormulaDifficulties": {},
+    "textureFormula": [],
+    "verticeSize": 10.0,
+    "collider": false,
+    "flatZones": []
+  },
+  "POST_PROCESSING": {
+    "keys": [
+      {
+        "height": 0.0,
+        "shadowIntensity": 1.4,
+        "starIntensity": 1.0,
+        "hueShift": 0.0,
+        "saturation": 0.95,
+        "contrast": 1.1,
+        "red": 0.96,
+        "green": 0.98,
+        "blue": 1.0
+      },
+      {
+        "height": 10.0,
+        "shadowIntensity": 1.65,
+        "starIntensity": 1.0,
+        "hueShift": 0.0,
+        "saturation": 0.95,
+        "contrast": 1.1,
+        "red": 0.96,
+        "green": 0.98,
+        "blue": 1.0
+      }
+    ]
+  },
+  "ORBIT_DATA": {
+    "parent": "Sun",
+    "semiMajorAxis": 292851588060.7985,
+    "smaDifficultyScale": {
+      "Normal": 1.0,
+      "Hard": 5.0,
+      "Realistic": 20.0
+    },
+    "eccentricity": 0.246318995536044,
+    "argumentOfPeriapsis": 138.6039391293976,
+    "direction": 1,
+    "multiplierSOI": 2.32896230320519,
+    "soiDifficultyScale": {}
+  },
+  "ACHIEVEMENT_DATA": {
+    "Landed": true,
+    "Takeoff": true,
+    "Atmosphere": true,
+    "Orbit": true,
+    "Crash": true
+  },
+  "LANDMARKS": []
+}

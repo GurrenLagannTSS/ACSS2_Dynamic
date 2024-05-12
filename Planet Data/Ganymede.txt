@@ -1,0 +1,170 @@
+{
+  "version": "1.5",
+  "BASE_DATA": {
+    "radius": 131705.0,
+    "radiusDifficultyScale": {
+      "Normal": 1.0,
+      "Hard": 5.0,
+      "Realistic": 20.0
+    },
+    "gravity": 1.428,
+    "gravityDifficultyScale": {},
+    "timewarpHeight": 5000.0,
+    "velocityArrowsHeight": "NaN",
+    "mapColor": {
+      "r": 0.725,
+      "g": 0.708,
+      "b": 0.666,
+      "a": 1.0
+    },
+    "significant": true,
+    "rotateCamera": true
+  },
+  "ATMOSPHERE_PHYSICS_DATA": {
+    "height": 6585.25,
+    "density": 5.30044e-11,
+    "curve": 7.69,
+    "curveScale": {},
+    "parachuteMultiplier": 0.788867,
+    "upperAtmosphere": 0.29948263163,
+    "heightDifficultyScale": {},
+    "shockwaveIntensity": 0.5,
+    "minHeatingVelocityMultiplier": 1.0
+  },
+  "TERRAIN_DATA": {
+    "TERRAIN_TEXTURE_DATA": {
+      "planetTexture": "ACSSGanymede",
+      "planetTextureCutout": 1.0,
+      "surfaceTexture_A": "Black_Dust",
+      "surfaceTextureSize_A": {
+        "x": 40.0,
+        "y": 15.0
+      },
+      "surfaceTexture_B": "Dark_Dust",
+      "surfaceTextureSize_B": {
+        "x": 50.0,
+        "y": 20.0
+      },
+      "terrainTexture_C": "Dark_Dust",
+      "terrainTextureSize_C": {
+        "x": 800.0,
+        "y": 200.0
+      },
+      "surfaceLayerSize": 500.0,
+      "minFade": 0.0,
+      "maxFade": 1.0,
+      "shadowIntensity": 8.0,
+      "shadowHeight": 6.0
+    },
+    "terrainFormulaDifficulties": {
+      "Normal": [
+        "OUTPUT = AddHeightMap(ACSSGanymede.txt, 827526.92088208743694344489358965, 0.05)"
+      ],
+      "Hard": [
+        "OUTPUT = AddHeightMap(ACSSGanymede.txt, 4137634.6044104371847172244679483, 0.25)"
+      ],
+      "Realistic": [
+        "OUTPUT = AddHeightMap(ACSSGanymede.txt, 16550538.417641748738868897871793, 1)"
+      ]
+    },
+    "textureFormula": [],
+    "verticeSize": 1.0,
+    "collider": true,
+    "flatZones": []
+  },
+  "ORBIT_DATA": {
+    "parent": "Jupiter",
+    "semiMajorAxis": 53508021.5885995,
+    "smaDifficultyScale": {
+      "Normal": 1.0,
+      "Hard": 5.0,
+      "Realistic": 20.0
+    },
+    "eccentricity": 0.000509829202641443,
+    "argumentOfPeriapsis": 14.00212602,
+    "direction": 1,
+    "multiplierSOI": 1,
+    "soiDifficultyScale": {}
+  },
+  "ACHIEVEMENT_DATA": {
+    "Landed": true,
+    "Takeoff": true,
+    "Atmosphere": true,
+    "Orbit": true,
+    "Crash": true
+  },
+  "LANDMARKS": [
+    {
+      "name": "Barnard Regio",
+      "angle": 85,
+      "startAngle": 65,
+      "endAngle": 105
+    },
+    {
+      "name": "Ishkur Crater",
+      "angle": 81.5,
+      "startAngle": 79,
+      "endAngle": 84
+    },
+    {
+      "name": "Mysia Sulci",
+      "angle": 105,
+      "startAngle": 100,
+      "endAngle": 110
+    },
+    {
+      "name": "Kittu Crater",
+      "angle": 115.5,
+      "startAngle": 115,
+      "endAngle": 116
+    },
+    {
+      "name": "Dendera Crater",
+      "angle": 194,
+      "startAngle": 193,
+      "endAngle": 195
+    },
+    {
+      "name": "Umma Sulcus",
+      "angle": 204,
+      "startAngle": 203,
+      "endAngle": 205
+    },
+    {
+      "name": "Melotte Regio",
+      "angle": 197.5,
+      "startAngle": 170,
+      "endAngle": 225
+    },
+    {
+      "name": "Tiamat Sulcus",
+      "angle": 244,
+      "startAngle": 242,
+      "endAngle": 246
+    },
+    {
+      "name": "Marius Regio",
+      "angle": 262.5,
+      "startAngle": 246,
+      "endAngle": 279
+    },
+    {
+      "name": "Uruk Sulcus",
+      "angle": 290,
+      "startAngle": 279,
+      "endAngle": 301
+    },
+    {
+      "name": "Galileo Regio",
+      "angle": 314.5,
+      "startAngle": 301,
+      "endAngle": 328
+    },
+    {
+      "name": "Phrygia Sulcus",
+      "angle": 59.5,
+      "startAngle": 49,
+      "endAngle": 70
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "version": "1.5",
+  "BASE_DATA": {
+    "radius": 34775400.0,
+    "radiusDifficultyScale": {
+      "Normal": 1.0,
+      "Hard": 5.0,
+      "Realistic": 20.0
+    },
+    "gravity": 274.0,
+    "gravityDifficultyScale": {},
+    "timewarpHeight": 500000.0,
+    "velocityArrowsHeight": "NaN",
+    "mapColor": {
+      "r": 0.966,
+      "g": 0.999,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "significant": true,
+    "rotateCamera": true
+  },
+  "ATMOSPHERE_PHYSICS_DATA": {
+    "height": 653958000.0,
+    "density": 2.159669e-5,
+    "curve": 1141.45,
+    "curveScale": {},
+    "parachuteMultiplier": 527.651,
+    "upperAtmosphere": 0.00201729621,
+    "heightDifficultyScale": {},
+    "shockwaveIntensity": 0.5,
+    "minHeatingVelocityMultiplier": 1.0
+  },
+  "ATMOSPHERE_VISUALS_DATA": {
+    "GRADIENT": {
+      "positionZ": 40000,
+      "height": 800000000.0,
+      "texture": "Atmo_Sun"
+    },
+    "CLOUDS": {
+      "texture": "None",
+      "startHeight": 0.0,
+      "width": 0.0,
+      "height": 0.0,
+      "alpha": 0.0,
+      "velocity": 0.0
+    },
+    "FOG": {
+      "keys": []
+    }
+  },
+  "ACHIEVEMENT_DATA": {
+    "Landed": false,
+    "Takeoff": false,
+    "Atmosphere": false,
+    "Orbit": true,
+    "Crash": false
+  },
+  "LANDMARKS": []
+}

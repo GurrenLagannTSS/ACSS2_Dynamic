@@ -1,0 +1,277 @@
+{
+  "version": "1.5",
+  "BASE_DATA": {
+    "radius": 128736.5,
+    "radiusDifficultyScale": {
+      "Normal": 1.0,
+      "Hard": 5.0,
+      "Realistic": 20.0
+    },
+    "gravity": 1.354,
+    "gravityDifficultyScale": {},
+    "timewarpHeight": 35000.0,
+    "velocityArrowsHeight": 3000.0,
+    "mapColor": {
+      "r": 0.547,
+      "g": 0.495,
+      "b": 0.393,
+      "a": 1.0
+    },
+    "significant": true,
+    "rotateCamera": true
+  },
+  "ATMOSPHERE_PHYSICS_DATA": {
+    "height": 60000.0,
+    "density": 0.0215994940906479,
+    "curve": 2.84796133983224,
+    "curveScale": {
+      "Normal": 1.0,
+      "Hard": 5.0,
+      "Realistic": 20.0
+    },
+    "parachuteMultiplier": 19.40407036393,
+    "upperAtmosphere": 0.808502931830416,
+    "heightDifficultyScale": {
+      "Normal": 1.0,
+      "Hard": 5.0,
+      "Realistic": 20.0
+    },
+    "shockwaveIntensity": 1.0,
+    "minHeatingVelocityMultiplier": 1.0
+  },
+  "ATMOSPHERE_VISUALS_DATA": {
+    "GRADIENT": {
+      "positionZ": 800,
+      "height": 60000.0,
+      "texture": "Atmo_Venus"
+    },
+    "CLOUDS": {
+      "texture": "Earth_Clouds",
+      "startHeight": -1500.0,
+      "width": 9157.86,
+      "height": 8500.0,
+      "alpha": 1.0,
+      "velocity": 1.0
+    },
+    "FOG": {
+      "keys": [
+        {
+          "color": {
+            "r": 0.836079836,
+            "g": 0.8455882,
+            "b": 0.559580445,
+            "a": 0.0
+          },
+          "distance": 100.0
+        },
+        {
+          "color": {
+            "r": 0.815686345,
+            "g": 0.788235366,
+            "b": 0.709803939,
+            "a": 0.25
+          },
+          "distance": 50000.0
+        }
+      ]
+    }
+  },
+  "TERRAIN_DATA": {
+    "TERRAIN_TEXTURE_DATA": {
+      "planetTexture": "ACSSTitan",
+      "planetTextureCutout": 0.945,
+      "surfaceTexture_A": "Dust",
+      "surfaceTextureSize_A": {
+        "x": 32.0,
+        "y": 14.0
+      },
+      "surfaceTexture_B": "Soft_Rocks",
+      "surfaceTextureSize_B": {
+        "x": 48.0,
+        "y": 20.0
+      },
+      "terrainTexture_C": "Blured",
+      "terrainTextureSize_C": {
+        "x": 2000.0,
+        "y": 650.0
+      },
+      "surfaceLayerSize": 60.0,
+      "minFade": 0.0,
+      "maxFade": 0.8,
+      "shadowIntensity": 6.0,
+      "shadowHeight": 6.5
+    },
+    "terrainFormulaDifficulties": {
+      "Normal": [
+        "OUTPUT = AddHeightMap(ACSSTitan.txt, 808875.28529772483448669217982312, 1)",
+      ],
+      "Hard": [
+        "OUTPUT = AddHeightMap(ACSSTitan.txt, 4044376.4264886241724334608991156, 1)",
+      ],
+      "Realistic": [
+        "OUTPUT = AddHeightMap(ACSSTitan.txt, 16177505.705954496689733843596462, 1)",
+      ]
+    },
+    "textureFormula": [],
+    "verticeSize": 2.0,
+    "collider": true,
+    "flatZones": [],
+    "rocks": {
+      "rockType": "Rock Square",
+      "rockDensity": 0.1,
+      "minSize": 0.2,
+      "maxSize": 0.5,
+      "powerCurve": 2.0,
+      "maxAngle": 20.0
+    }
+  },
+  "POST_PROCESSING": {
+    "keys": [
+      {
+        "height": 500.0,
+        "shadowIntensity": 1.35,
+        "starIntensity": 0.0,
+        "hueShift": 10.0,
+        "saturation": 1.0,
+        "contrast": 1.18,
+        "red": 1.11,
+        "green": 1.08,
+        "blue": 0.85
+      },
+      {
+        "height": 40000.0,
+        "shadowIntensity": 1.75,
+        "starIntensity": 0.0,
+        "hueShift": 0.0,
+        "saturation": 0.95,
+        "contrast": 1.2,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+      },
+      {
+        "height": 50000.0,
+        "shadowIntensity": 1.75,
+        "starIntensity": 0.0,
+        "hueShift": 0.0,
+        "saturation": 0.95,
+        "contrast": 1.2,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+      },
+      {
+        "height": 60000.0,
+        "shadowIntensity": 1.75,
+        "starIntensity": 1.0,
+        "hueShift": 0.0,
+        "saturation": 0.95,
+        "contrast": 1.2,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+      }
+    ]
+  },
+  "ORBIT_DATA": {
+    "parent": "Saturn",
+    "semiMajorAxis": 61083003.650637,
+    "smaDifficultyScale": {
+      "Normal": 1.0,
+      "Hard": 5.0,
+      "Realistic": 20.0
+    },
+    "eccentricity": 0.0289033593196688,
+    "argumentOfPeriapsis": 27.63672895,
+    "direction": 1,
+    "multiplierSOI": 1.0,
+    "soiDifficultyScale": {}
+  },
+  "ACHIEVEMENT_DATA": {
+    "Landed": true,
+    "Takeoff": true,
+    "Atmosphere": true,
+    "Orbit": true,
+    "Crash": true
+  },
+  "LANDMARKS": [
+    {
+      "name": "Quivira",
+      "angle": 70,
+      "startAngle": 50,
+      "endAngle": 90
+    },
+    {
+      "name": "Fensal",
+      "angle": 32.5,
+      "startAngle": 15,
+      "endAngle": 50
+    },
+    {
+      "name": "Xanadu",
+      "angle": 340,
+      "startAngle": 305,
+      "endAngle": 15
+    },
+    {
+      "name": "Santorini Facula",
+      "angle": 302.5,
+      "startAngle": 300,
+      "endAngle": 305
+    },
+    {
+      "name": "Shangri-La",
+      "angle": 260,
+      "startAngle": 240,
+      "endAngle": 280
+    },
+    {
+      "name": "Nicobar Faculae",
+      "angle": 295,
+      "startAngle": 290,
+      "endAngle": 300
+    },
+    {
+      "name": "Ohau Facula",
+      "angle": 285,
+      "startAngle": 280,
+      "endAngle": 290
+    },
+    {
+      "name": "Mystis Crater",
+      "angle": 255.14,
+      "startAngle": 254.95,
+      "endAngle": 255.34
+    },
+    {
+      "name": "Adiri",
+      "angle": 230,
+      "startAngle": 220,
+      "endAngle": 240
+    },
+    {
+      "name": "Bellet",
+      "angle": 185,
+      "startAngle": 150,
+      "endAngle": 220
+    },
+    {
+      "name": "Senkyo",
+      "angle": 143,
+      "startAngle": 136,
+      "endAngle": 150
+    },
+    {
+      "name": "Tollan Terra",
+      "angle": 127.3,
+      "startAngle": 119,
+      "endAngle": 136
+    },
+    {
+      "name": "Tsiipiya Terra",
+      "angle": 109.88,
+      "startAngle": 103.46,
+      "endAngle": 116.23
+    }
+  ]
+}

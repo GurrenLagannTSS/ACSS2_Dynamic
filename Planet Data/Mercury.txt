@@ -1,0 +1,220 @@
+{
+  "version": "1.5",
+  "BASE_DATA": {
+    "radius": 121970.0,
+    "radiusDifficultyScale": {
+      "Normal": 1.0,
+      "Hard": 5.0,
+      "Realistic": 20.0
+    },
+    "gravity": 3.7,
+    "gravityDifficultyScale": {},
+    "timewarpHeight": 2500.0,
+    "velocityArrowsHeight": "NaN",
+    "mapColor": {
+      "r": 0.43,
+      "g": 0.408,
+      "b": 0.367,
+      "a": 1.0
+    },
+    "significant": true,
+    "rotateCamera": true
+  },
+  "ATMOSPHERE_PHYSICS_DATA": {
+    "height": 975760.0,
+    "density": 1.80789e-17,
+    "curve": 140.17,
+    "curveScale": {},
+    "parachuteMultiplier": 6.411758,
+    "upperAtmosphere": 0.01642760514,
+    "heightDifficultyScale": {},
+    "shockwaveIntensity": 0.5,
+    "minHeatingVelocityMultiplier": 1.0
+  },
+  "TERRAIN_DATA": {
+    "TERRAIN_TEXTURE_DATA": {
+      "planetTexture": "ACSSMercury",
+      "planetTextureCutout": 0.945,
+      "surfaceTexture_A": "Dark_Dust",
+      "surfaceTextureSize_A": {
+        "x": 20.0,
+        "y": 8.0
+      },
+      "surfaceTexture_B": "Hard_Rocks",
+      "surfaceTextureSize_B": {
+        "x": 30.0,
+        "y": 14.0
+      },
+      "terrainTexture_C": "Soft_Rocks",
+      "terrainTextureSize_C": {
+        "x": 280.0,
+        "y": 145.0
+      },
+      "surfaceLayerSize": 30.0,
+      "minFade": 0.0,
+      "maxFade": 1.0,
+      "shadowIntensity": 13.0,
+      "shadowHeight": 10.0
+    },
+    "terrainFormulaDifficulties": {
+      "Normal": [
+        "OUTPUT = AddHeightMap(ACSSMercury.txt, 383180.0559583470812952886134586, 0.05)"
+      ],
+      "Hard": [
+        "OUTPUT = AddHeightMap(ACSSMercury.txt, 1915900.279791735406476443067293, 0.25)"
+      ],
+      "Realistic": [
+        "OUTPUT = AddHeightMap(ACSSMercury.txt, 7663601.119166941625905772269172, 1)"
+      ]
+    },
+    "textureFormula": [
+      "OUTPUT = AddHeightMap(Perlin,15079.644737231, 1, Curve8)",
+      "OUTPUT = ApplyCurve(Curve8)",
+      "OUTPUT = ApplyCurve(Curve8)"
+    ],
+    "verticeSize": 2.0,
+    "collider": true,
+    "flatZones": [],
+    "rocks": {
+      "rockType": "Rock Square",
+      "rockDensity": 0.5,
+      "minSize": 0.1,
+      "maxSize": 0.3,
+      "powerCurve": 2.0,
+      "maxAngle": 20.0
+    }
+  },
+  "POST_PROCESSING": {
+    "keys": [
+      {
+        "height": 10000.0,
+        "shadowIntensity": 1.75,
+        "starIntensity": 0.0,
+        "hueShift": 0.0,
+        "saturation": 0.95,
+        "contrast": 1.2,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+      },
+      {
+        "height": 15000.0,
+        "shadowIntensity": 1.75,
+        "starIntensity": 1.0,
+        "hueShift": 0.0,
+        "saturation": 0.95,
+        "contrast": 1.2,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+      }
+    ]
+  },
+  "ORBIT_DATA": {
+    "parent": "Sun",
+    "semiMajorAxis": 2921388798.377124,
+    "smaDifficultyScale": {
+      "Normal": 1.0,
+      "Hard": 5.0,
+      "Realistic": 20.0
+    },
+    "eccentricity": 0.2034545251831647,
+    "argumentOfPeriapsis": 17.34463742784087,
+    "direction": 1,
+    "multiplierSOI": 1.0,
+    "soiDifficultyScale": {}
+  },
+  "ACHIEVEMENT_DATA": {
+    "Landed": true,
+    "Takeoff": true,
+    "Atmosphere": true,
+    "Orbit": true,
+    "Crash": true
+  },
+  "LANDMARKS": [
+    {
+      "name": "Vieira da Silva Crater",
+      "angle": 33.3,
+      "startAngle": 33.2,
+      "endAngle": 34.7
+    },
+    {
+      "name": "Lysippus Crater",
+      "angle": 42.5,
+      "startAngle": 41,
+      "endAngle": 44.1
+    },
+    {
+      "name": "Tir Planitia",
+      "angle": 86.7,
+      "startAngle": 81.1,
+      "endAngle": 91.1
+    },
+    {
+      "name": "Paramour Rupes",
+      "angle": 122.7,
+      "startAngle": 122.3,
+      "endAngle": 123
+    },
+    {
+      "name": "Kunisada Crater",
+      "angle": 156.9,
+      "startAngle": 154.6,
+      "endAngle": 159.4
+    },
+    {
+      "name": "Izquierdo Crater",
+      "angle": 162.8,
+      "startAngle": 161.5,
+      "endAngle": 164.1
+    },
+    {
+      "name": "Beagle Rupes",
+      "angle": 168.8,
+      "startAngle": 168.5,
+      "endAngle": 169.1
+    },
+    {
+      "name": "Blossom Rupes",
+      "angle": 181.6,
+      "startAngle": 181.4,
+      "endAngle": 181.7
+    },
+    {
+      "name": "Apārangi Planitia",
+      "angle": 199.4,
+      "startAngle": 190.7,
+      "endAngle": 204.6
+    },
+    {
+      "name": "Lu Hsun Crater",
+      "angle": 293.8,
+      "startAngle": 292.6,
+      "endAngle": 294.9
+    },
+    {
+      "name": "Homer Crater",
+      "angle": 306.7,
+      "startAngle": 303,
+      "endAngle": 310.3
+    },
+    {
+      "name": "Sihtu Planitia",
+      "angle": 325.6,
+      "startAngle": 322.8,
+      "endAngle": 328.5
+    },
+    {
+      "name": "Polygnotus Crater",
+      "angle": 339.1,
+      "startAngle": 337.8,
+      "endAngle": 340.7
+    },
+    {
+      "name": "Boethius Crater",
+      "angle": 343.5,
+      "startAngle": 343,
+      "endAngle": 344.3
+    }
+  ]
+}

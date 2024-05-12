@@ -1,0 +1,251 @@
+{
+  "version": "1.5",
+  "BASE_DATA": {
+    "radius": 302600.0,
+    "radiusDifficultyScale": {
+      "Normal": 1.0,
+      "Hard": 5.0,
+      "Realistic": 20.0
+    },
+    "gravity": 8.87,
+    "gravityDifficultyScale": {},
+    "timewarpHeight": 35000.0,
+    "velocityArrowsHeight": 3000.0,
+    "mapColor": {
+      "r": 0.837,
+      "g": 0.85,
+      "b": 0.836,
+      "a": 1.0
+    },
+    "significant": true,
+    "rotateCamera": true
+  },
+  "ATMOSPHERE_PHYSICS_DATA": {
+    "height": 125000.0,
+    "density": 0.277910781,
+    "curve": 29.58,
+    "curveScale": {},
+    "parachuteMultiplier": 3.892424,
+    "upperAtmosphere": 0.077848472,
+    "heightDifficultyScale": {},
+    "shockwaveIntensity": 1.0,
+    "minHeatingVelocityMultiplier": 1.0
+  },
+  "ATMOSPHERE_VISUALS_DATA": {
+    "GRADIENT": {
+      "positionZ": 800,
+      "height": 45000.0,
+      "texture": "Atmo_Venus"
+    },
+    "CLOUDS": {
+      "texture": "Earth_Clouds",
+      "startHeight": -1500.0,
+      "width": 9157.86,
+      "height": 8500.0,
+      "alpha": 1.0,
+      "velocity": 1.0
+    },
+    "FOG": {
+      "keys": [
+        {
+          "color": {
+            "r": 0.836079836,
+            "g": 0.8455882,
+            "b": 0.559580445,
+            "a": 0.0
+          },
+          "distance": 100.0
+        },
+        {
+          "color": {
+            "r": 0.815686345,
+            "g": 0.788235366,
+            "b": 0.709803939,
+            "a": 0.2
+          },
+          "distance": 50000.0
+        }
+      ]
+    }
+  },
+  "TERRAIN_DATA": {
+    "TERRAIN_TEXTURE_DATA": {
+      "planetTexture": "ACSSVenus",
+      "planetTextureCutout": 0.945,
+      "surfaceTexture_A": "Dust",
+      "surfaceTextureSize_A": {
+        "x": 32.0,
+        "y": 14.0
+      },
+      "surfaceTexture_B": "Soft_Rocks",
+      "surfaceTextureSize_B": {
+        "x": 48.0,
+        "y": 20.0
+      },
+      "terrainTexture_C": "Blured",
+      "terrainTextureSize_C": {
+        "x": 2000.0,
+        "y": 650.0
+      },
+      "surfaceLayerSize": 60.0,
+      "minFade": 0.0,
+      "maxFade": 0.8,
+      "shadowIntensity": 6.0,
+      "shadowHeight": 6.5
+    },
+    "terrainFormulaDifficulties": {
+      "Normal": [
+        "OUTPUT = AddHeightMap(ACSSVenus_USGS.txt, 1901291.8739525428679175917755608, 1)",
+        "PLAINS = AddHeightMap(ACSSVenus_Plains.txt, 1901291.8739525428679175917755608, 1)",
+        "OUTPUT = AddHeightMap(ACSSVenus_Magellan.txt, 1901291.8739525428679175917755608, 1)"
+      ],
+      "Hard": [
+        "OUTPUT = AddHeightMap(ACSSVenus_USGS.txt, 9506459.3697627143395879588778038, 1)",
+        "PLAINS = AddHeightMap(ACSSVenus_Plains.txt, 9506459.3697627143395879588778038, 1)",
+        "OUTPUT = AddHeightMap(ACSSVenus_Magellan.txt, 9506459.3697627143395879588778038, 1)"
+      ],
+      "Realistic": [
+        "OUTPUT = AddHeightMap(ACSSVenus_USGS.txt, 38025837.479050857358351835511215, 1)",
+        "PLAINS = AddHeightMap(ACSSVenus_Plains.txt, 38025837.479050857358351835511215, 1)",
+        "OUTPUT = AddHeightMap(ACSSVenus_Magellan.txt, 38025837.479050857358351835511215)"
+      ]
+    },
+    "textureFormula": [],
+    "verticeSize": 2.0,
+    "collider": true,
+    "flatZones": [],
+    "rocks": {
+      "rockType": "Rock Square",
+      "rockDensity": 0.1,
+      "minSize": 0.2,
+      "maxSize": 0.5,
+      "powerCurve": 2.0,
+      "maxAngle": 20.0
+    }
+  },
+  "POST_PROCESSING": {
+    "keys": [
+      {
+        "height": 500.0,
+        "shadowIntensity": 1.35,
+        "starIntensity": 0.0,
+        "hueShift": 10.0,
+        "saturation": 1.0,
+        "contrast": 1.18,
+        "red": 1.11,
+        "green": 1.08,
+        "blue": 0.85
+      },
+      {
+        "height": 40000.0,
+        "shadowIntensity": 1.75,
+        "starIntensity": 0.0,
+        "hueShift": 0.0,
+        "saturation": 0.95,
+        "contrast": 1.2,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+      },
+      {
+        "height": 50000.0,
+        "shadowIntensity": 1.75,
+        "starIntensity": 0.0,
+        "hueShift": 0.0,
+        "saturation": 0.95,
+        "contrast": 1.2,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+      },
+      {
+        "height": 60000.0,
+        "shadowIntensity": 1.75,
+        "starIntensity": 1.0,
+        "hueShift": 0.0,
+        "saturation": 0.95,
+        "contrast": 1.2,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+      }
+    ]
+  },
+  "ORBIT_DATA": {
+    "parent": "Sun",
+    "semiMajorAxis": 5444209020.456085,
+    "smaDifficultyScale": {
+      "Normal": 1.0,
+      "Hard": 5.0,
+      "Realistic": 20.0
+    },
+    "eccentricity": 0.009364401835914068,
+    "argumentOfPeriapsis": 82.44353078447374,
+    "direction": 1,
+    "multiplierSOI": 1.0,
+    "soiDifficultyScale": {}
+  },
+  "ACHIEVEMENT_DATA": {
+    "Landed": true,
+    "Takeoff": true,
+    "Atmosphere": true,
+    "Orbit": true,
+    "Crash": true
+  },
+  "LANDMARKS": [
+    {
+      "name": "Ovda Regio",
+      "angle": 4.4,
+      "startAngle": 338.5,
+      "endAngle": 44
+    },
+    {
+      "name": "Tinatin Planitia",
+      "angle": 74,
+      "startAngle": 62,
+      "endAngle": 95
+    },
+    {
+      "name": "Guinevere Planitia",
+      "angle": 107,
+      "startAngle": 95,
+      "endAngle": 120
+    },
+    {
+      "name": "Laufey Regio",
+      "angle": 135,
+      "startAngle": 120,
+      "endAngle": 145
+    },
+    {
+      "name": "Hinemoa Planitia",
+      "angle": 185,
+      "startAngle": 166,
+      "endAngle": 210
+    },
+    {
+      "name": "Alta Regio",
+      "angle": 249.9,
+      "startAngle": 242,
+      "endAngle": 259.5
+    },
+    {
+      "name": "Rusalka Planitia",
+      "angle": 280,
+      "startAngle": 259.5,
+      "endAngle": 303
+    },
+    {
+      "name": "Thetis Regio",
+      "angle": 320.1,
+      "startAngle": 303,
+      "endAngle": 338.5
+    },
+    {
+      "name": "Aphrodite Terra",
+      "angle": 345.2,
+      "startAngle": 303,
+      "endAngle": 62
+    }
+  ]
+}

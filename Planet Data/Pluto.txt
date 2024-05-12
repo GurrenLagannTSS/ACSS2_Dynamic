@@ -1,0 +1,240 @@
+{
+  "version": "1.5",
+  "BASE_DATA": {
+    "radius": 59415.0,
+    "radiusDifficultyScale": {
+      "Normal": 1.0,
+      "Hard": 5.0,
+      "Realistic": 20.0
+    },
+    "gravity": 0.62,
+    "gravityDifficultyScale": {},
+    "timewarpHeight": 5000.0,
+    "velocityArrowsHeight": "NaN",
+    "mapColor": {
+      "r": 0.774,
+      "g": 0.73,
+      "b": 0.646,
+      "a": 1.0
+    },
+    "significant": true,
+    "rotateCamera": true
+  },
+  "ATMOSPHERE_PHYSICS_DATA": {
+    "height": 85000.0,
+    "density": 3.92562072267753e-07,
+    "curve": 4.0275710019294,
+    "curveScale": {
+      "Normal": 1.0,
+      "Hard": 5.0,
+      "Realistic": 20.0
+    },
+    "parachuteMultiplier": 19.437992061293,
+    "upperAtmosphere": 0.571705648861558,
+    "heightDifficultyScale": {
+      "Normal": 1.0,
+      "Hard": 5.0,
+      "Realistic": 20.0
+    },
+    "shockwaveIntensity": 0.5,
+    "minHeatingVelocityMultiplier": 1.0
+  },
+  "TERRAIN_DATA": {
+    "TERRAIN_TEXTURE_DATA": {
+      "planetTexture": "ACSSPluto",
+      "planetTextureCutout": 0.99,
+      "surfaceTexture_A": "Ice",
+      "surfaceTextureSize_A": {
+        "x": 70.0,
+        "y": 25.0
+      },
+      "surfaceTexture_B": "Ice",
+      "surfaceTextureSize_B": {
+        "x": 70.0,
+        "y": 25.0
+      },
+      "terrainTexture_C": "Ice",
+      "terrainTextureSize_C": {
+        "x": 1200.0,
+        "y": 400.0
+      },
+      "surfaceLayerSize": 60.0,
+      "minFade": 0.0,
+      "maxFade": 0.6,
+      "shadowIntensity": 4.0,
+      "shadowHeight": 2.0
+    },
+    "terrainFormulaDifficulties": {
+      "Normal": [
+        "OUTPUT = AddHeightMap(ACSSPluto.txt, 373315.4550261, 0.05)"
+      ],
+      "Hard": [
+        "OUTPUT = AddHeightMap(ACSSPluto.txt, 1866577.2751303, 0.25)"
+      ],
+      "Realistic": [
+        "OUTPUT = AddHeightMap(ACSSPluto.txt, 7466309.1005215, 1)"
+      ]
+    },
+    "textureFormula": [],
+    "verticeSize": 2.0,
+    "collider": true,
+    "flatZones": []
+  },
+  "POST_PROCESSING": {
+    "keys": [
+      {
+        "height": 500.0,
+        "shadowIntensity": 1.4,
+        "starIntensity": 1.0,
+        "hueShift": 5.0,
+        "saturation": 1.0,
+        "contrast": 1.05,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+      },
+      {
+        "height": 15000.0,
+        "shadowIntensity": 1.65,
+        "starIntensity": 1.0,
+        "hueShift": 5.0,
+        "saturation": 1.0,
+        "contrast": 1.025,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+      }
+    ]
+  },
+  "ORBIT_DATA": {
+    "parent": "Pluto-Charon",
+    "semiMajorAxis": 94142.730935675528750455501300673,
+    "smaDifficultyScale": {
+      "Normal": 1.0,
+      "Hard": 5.0,
+      "Realistic": 20.0
+    },
+    "eccentricity": 0.0000357471634691019,
+    "argumentOfPeriapsis": 107.32944549,
+    "direction": -1,
+    "multiplierSOI": 5,
+    "soiDifficultyScale": {}
+  },
+  "ACHIEVEMENT_DATA": {
+    "Landed": true,
+    "Takeoff": true,
+    "Atmosphere": true,
+    "Orbit": true,
+    "Crash": true
+  },
+  "LANDMARKS": [
+    {
+      "name": "Virgil Fossae",
+      "angle": 333.429,
+      "startAngle": 332.598,
+      "endAngle": 334.061
+    },
+    {
+      "name": "Hermond Fossae",
+      "angle": 329.658,
+      "startAngle": 328.578,
+      "endAngle": 330.957
+    },
+    {
+      "name": "Beatrice Fossa",
+      "angle": 321.121,
+      "startAngle": 320.663,
+      "endAngle": 321.579
+    },
+    {
+      "name": "Viking Terra",
+      "angle": 299.03,
+      "startAngle": 286.9,
+      "endAngle": 303.538
+    },
+    {
+      "name": "Hillary Montes",
+      "angle": 276.417,
+      "startAngle": 274.915,
+      "endAngle": 277.919
+    },
+    {
+      "name": "Cthulhu Macula",
+      "angle": 266.78,
+      "startAngle": 229.477,
+      "endAngle": 229.477
+    },
+    {
+      "name": "Sputnik Planitia",
+      "angle": 271.31,
+      "startAngle": 256.638,
+      "endAngle": 274.915
+    },
+    {
+      "name": "Tombaugh Regio",
+      "angle": 266.78,
+      "startAngle": 229.477,
+      "endAngle": 286.9
+    },
+    {
+      "name": "Tartarus Dorsa",
+      "angle": 216.91,
+      "startAngle": 208.779,
+      "endAngle": 229.477
+    },
+	    {
+      "name": "Balrog Macula",
+      "angle": 169.1,
+      "startAngle": 142.8,
+      "endAngle": 195.4
+    },
+    {
+      "name": "Vucub-Came Macula",
+      "angle": 129.1,
+      "startAngle": 122,
+      "endAngle": 136.2
+    },
+    {
+      "name": "Hun-Came Macula",
+      "angle": 107.55,
+      "startAngle": 101.7,
+      "endAngle": 113.4
+    },
+    {
+      "name": "Meng-Po Macula",
+      "angle": 86.25,
+      "startAngle": 82.5,
+      "endAngle": 90
+    },
+    {
+      "name": "Cthulhu Macula",
+      "angle": 348.95,
+      "startAngle": 286.9,
+      "endAngle": 51
+    },
+    {
+      "name": "Harrington Crater",
+      "angle": 297.95,
+      "startAngle": 296.9,
+      "endAngle": 299
+    },
+    {
+      "name": "Sun Wukong Fossa",
+      "angle": 218.15,
+      "startAngle": 217.7,
+      "endAngle": 218.6
+    },
+    {
+      "name": "The Donut",
+      "angle": 58.5,
+      "startAngle": 51,
+      "endAngle": 66
+    },
+    {
+      "name": "Chthulu Macula tail",
+      "angle": 70.5,
+      "startAngle": 66,
+      "endAngle": 75
+    }
+  ]
+}
