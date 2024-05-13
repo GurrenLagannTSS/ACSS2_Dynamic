@@ -20,17 +20,6 @@
     "significant": true,
     "rotateCamera": true
   },
-  "ATMOSPHERE_PHYSICS_DATA": {
-    "height": 10000.0,
-    "density": 1.12953e-11,
-    "curve": 15.33,
-    "curveScale": {},
-    "parachuteMultiplier": 0.600756,
-    "upperAtmosphere": 0.1501889,
-    "heightDifficultyScale": {},
-    "shockwaveIntensity": 0.5,
-    "minHeatingVelocityMultiplier": 1.0
-  },
   "TERRAIN_DATA": {
     "TERRAIN_TEXTURE_DATA": {
       "planetTexture": "ACSSEris",
