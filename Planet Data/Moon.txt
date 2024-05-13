@@ -24,17 +24,6 @@
     "significant": true,
     "rotateCamera": true
   },
-  "ATMOSPHERE_PHYSICS_DATA": {
-    "height": 4343.75,
-    "density": 1.74617e-17,
-    "curve": 2.01,
-    "curveScale": {},
-    "parachuteMultiplier": 2.25064,
-    "upperAtmosphere": 0.87245181304,
-    "heightDifficultyScale": {},
-    "shockwaveIntensity": 1.0,
-    "minHeatingVelocityMultiplier": 1.0
-  },
   "TERRAIN_DATA": {
     "TERRAIN_TEXTURE_DATA": {
       "planetTexture": "ACSSMoon",

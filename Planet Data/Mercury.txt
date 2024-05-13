@@ -20,17 +20,6 @@
     "significant": true,
     "rotateCamera": true
   },
-  "ATMOSPHERE_PHYSICS_DATA": {
-    "height": 975760.0,
-    "density": 1.80789e-17,
-    "curve": 140.17,
-    "curveScale": {},
-    "parachuteMultiplier": 6.411758,
-    "upperAtmosphere": 0.01642760514,
-    "heightDifficultyScale": {},
-    "shockwaveIntensity": 0.5,
-    "minHeatingVelocityMultiplier": 1.0
-  },
   "TERRAIN_DATA": {
     "TERRAIN_TEXTURE_DATA": {
       "planetTexture": "ACSSMercury",

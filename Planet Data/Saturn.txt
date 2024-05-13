@@ -21,18 +21,18 @@
     "rotateCamera": true
   },
   "ATMOSPHERE_PHYSICS_DATA": {
-    "height": 50000.0,
-    "density": 0.000784317,
-    "curve": 3.12,
-    "curveScale": {},
-    "parachuteMultiplier": 14.77943,
-    "upperAtmosphere": 0.7389716,
+    "height": 314485,
     "heightDifficultyScale": {
-      "Normal": 1.0,
-      "Hard": 5.0,
-      "Realistic": 20.0
+      "normal": 1,
+      "hard": 1.665,
+      "realistic": 9.062
     },
-    "shockwaveIntensity": 0.5,
+    "density": 0.000779,
+    "curve": 60.89,
+    "curveScale": {},
+    "parachuteMultiplier": 6.0,
+    "upperAtmosphere": 0.035,
+    "shockwaveIntensity": 1.0,
     "minHeatingVelocityMultiplier": 1.0
   },
   "ATMOSPHERE_VISUALS_DATA": {
